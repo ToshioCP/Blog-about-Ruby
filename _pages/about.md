@@ -3,6 +3,24 @@ permalink: /about/
 title: "About"
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
+「徒然なるままにRuby」は、はてなブログ「おもこん」に2022年9月から書いているシリーズが元になっています。
+はじめはRubyの初心者向けのチュートリアルにするつもりでしたが、だんだん難しい内容のトピックも入ってきました。
+それで、サブタイトルを「初心者から上級者までのゆるーいRubyチュートリアル」としました。
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+このチュートリアルのJekyllソースファイルは[GitHubレポジトリ](https://github.com/ToshioCP/Blog-about-Ruby)にあります。
+その`_example`フォルダにRubyのソースコードがあるので、必要に応じて使ってください。
+
+このウェブサイトは、皆様に有用であることを願っていますが、内容が正しいことを保証するものではありません。
+このウェブサイトの内容によるいかなる損害に対しても保証はできません。
+例えば、次のようなケースです。
+
+- このウェブサイトに基づいて作成したプログラムによる損害
+- このウェブサイトの情報に基づいて作成した文書（書籍など)による損害
+- その他
+
+このウェブサイトの情報の活用についてはご自身の責任で行ってください。
+
+Rubyは本当に素晴らしい言語です。
+しかし、Rubyは終着点ではなく出発点です。
+様々なことにRubyを応用することこそが、最も面白いことだと思います。
+今後も興味深いトピックが見つかるごとに記事を増やしていくつもりです。

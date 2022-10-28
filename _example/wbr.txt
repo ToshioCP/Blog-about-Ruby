@@ -1,0 +1,204 @@
+
+cd ....
+#### モデルの作成
+
+データベースはSqlite3を用います。
+以前作ったときはCSVでした。
+Railsでは、データベースに保存する単位をモデルといいます。
+単語帳でいえば、一組の英語と日本語訳のセットです。
+ですので、ここではそれを「word」と呼ぶことにしましょう。
+つまり、モデル名はWordです（モデルは大文字で始める）。
+Railsはコマンドを使うと次のことができます。
+
+- `generate model`コマンドでモデルを作る
+- `db:migrate`コマンドでデータベースを作り、接続に必要な設定をする
+
+複雑なプログラムを組まなくてもrailsが面倒を見てくれて作業が少なくなります。
+
+```
+$ bundle exec rails generate model Word en:string ja:string
+      invoke  active_record
+      create    db/migrate/20221014115028_create_words.rb
+      create    app/models/word.rb
+      invoke    test_unit
+      create      test/models/word_test.rb
+      create      test/fixtures/words.yml
+```
+
+- モデルWordにはenとjaがある。
+それぞれ「英語の単語」と「日本語訳」
+- enとjaは「string」という属性のデータ
+
+データベースを作るためのRubyプログラムは`db/migrate`に作られます。
+上記の表示の中の`create    db/migrate/20221014115028_create_words.rb`です。
+その内容は次のようになっています。
+
+```ruby
+class CreateWords < ActiveRecord::Migration[7.0]
+  def change
+    create_table :words do |t|
+      t.string :en
+      t.string :ja
+
+      t.timestamps
+    end
+  end
+end
+```
+
+データベース・テーブルを作るプログラムですが、もちろんこのプログラムの背後にはrailsのライブラリ・プログラムがあるわけです。
+このプログラムには現れていませんが、レコードを識別するための「id」というフィールドが自動的に作られます。
+そして、最初のレコードには「id」に1を、次のレコードには2を、というように数字を入れていきます。
+プログラムではenとjaのstringフィールドに加え、timestampsフィールドが作られます。
+ここには、生成日時、更新日時が入ります（それで複数形なのだと思います）。
+
+このプログラムを走らせて、データベースを初期化します。
+
+```
+$ bundle exec rails db:migrate
+== 20221014115028 CreateWords: migrating ======================================
+-- create_table(:words)
+   -> 0.0019s
+== 20221014115028 CreateWords: migrated (0.0019s) =============================
+```
+
+#### サーバとクライアントのインタラクション
+
+サーバはrailsの単語帳プログラムの動く方で、クライアントはブラウザで（localhost:3000に）アクセスする方です。
+両者はネットワーク（ローカルのPC内部のネットワーク）を通してやりとりします。
+それをインタラクションといっています。
+以下ではSがサーバ、Cがクライアントを表します。
+
+- C: ブラウザが最初にアクセス＝＞S: indexページを出力。
+indexページにはappend、print、quitのボタン（またはリンク）を設ける
+- C: appendをクリック＝＞S: 入力画面を表示＝＞C: 英語、日本語を入力し送信ボタンをクリック＝＞S: それらをデータベースに保存＝＞S: 保存したデータを表示
+- C: 正規表現を入力し、printをクリック＝＞S: 英単語をサーチして結果を送信（このとき、項目にチェックボタン、changeとdeleteボタン（またはリンク）も表示
+- C: その画面からchangeをクリック＝＞S: 入力画面を表示＝＞C: 英語、日本語を入力し送信ボタンをクリック＝＞S: それらをデータベースに保存＝＞S: 保存したデータを表示
+- C: print後の画面からdeleteをクリック＝＞S: その単語を削除して、削除完了のメッセージ画面を表示
+- C: ブラウザ画面を閉じる＝＞S: 待機状態
+
+これらの動きは、ルーティング、コントローラ、ビューワによってプログラムします。
+
+
+
+
+```
+$ bundle exec rails generate controller Words
+      create  app/controllers/words_controller.rb
+      invoke  erb
+      create    app/views/words
+      invoke  test_unit
+      create    test/controllers/words_controller_test.rb
+      invoke  helper
+      create    app/helpers/words_helper.rb
+      invoke    test_unit
+```
+
+
+```
+$ bundle exec rails generate controller Words index new create edit update delete --force
+       force  app/controllers/words_controller.rb
+       route  get 'words/index'
+              get 'words/new'
+              get 'words/create'
+              get 'words/edit'
+              get 'words/update'
+              get 'words/delete'
+      invoke  erb
+       exist    app/views/words
+      create    app/views/words/index.html.erb
+      create    app/views/words/new.html.erb
+      create    app/views/words/create.html.erb
+      create    app/views/words/edit.html.erb
+      create    app/views/words/update.html.erb
+      create    app/views/words/delete.html.erb
+      invoke  test_unit
+       force    test/controllers/words_controller_test.rb
+      invoke  helper
+   identical    app/helpers/words_helper.rb
+      invoke    test_unit
+```
+
+#### Bootstrap
+
+ウェブのレイアウトを整えるにはスタイルシートを使います。
+しかし、一からスタイルシートを書くのは大変です。
+ネット上には無料で使えるスタイルシート（CSS）があり、有名なのはBootstrapです。
+ここでは、BootstrapのCSSとJavascriptを用います。
+なお、Javascriptがないとプルダウンメニューのような動的なレイアウトができません。
+PC用の画面ではJavascriptが無くても何とかなるかもしれませんが、スマートフォン用の小画面用のレイアウトではハンバーガーメニューが機能しなくなります。
+
+Bootstrapのウェブサイトに行き、CDNを通してCSSを使う一行コードを`app/views/layouts/application.html.erb`のヘッダの`stylesheet_link_tag`の次の行に挿入します。
+また、同様にCDNを通して使うJavascriptの一行コードを同じファイルのbodyの終了タグお直前に挿入します。
+このあたりの使い方についてはBootstrapのウェブサイトに説明があります。
+
+PC画面では幅いっぱいに文字が広がると読みにくくなります。
+デバイスの画面の大きさに応じて幅を調整するCSSが`<div class="container">〜</div>`です。
+これをbodyタグ（Javascript部分を除く）の直下に置きます。
+ウェブ画面の最上段にナビゲーションバー（メニューバーのようなもの）を付けることができます。
+Bootstrapのウェブのドキュメントを開き、component=>navbarと進みます。
+そのサンプルコードをコピーし、`<div class="container">`の下に挿入します。
+この段階で`rails server`をして画面を見ると、ナビゲーションバーが現れます。
+
+（写真）
+
+バーの中の項目をカスタマイズします。
+
+・・・・・・・・・
+
+
+
+
+
+application.html.erb
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WordBookRails</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">WordBook</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Append</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Change</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Delete</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Print</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <%= yield %>
+      <!-- Bootstrap Javascript -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </div>
+  </body>
+</html>

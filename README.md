@@ -1,27 +1,39 @@
-# Minimal Mistakes remote theme starter
+# このレポジトリは何？
 
-Click [**Use this template**](https://github.com/mmistakes/mm-github-pages-starter/generate) button above for the quickest method of getting started with the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes).
+このレポジトリは[徒然なるままにRuby](https://toshiocp.github.io/Blog-about-Ruby/)のJekyllソースコードです。
 
-Contains basic configuration to get you a site with:
+# 徒然なるままにRubyとは？
 
-- Sample posts.
-- Sample top navigation.
-- Sample author sidebar with social links.
-- Sample footer links.
-- Paginated home page.
-- Archive pages for posts grouped by year, category, and tag.
-- Sample about page.
-- Sample 404 page.
-- Site wide search.
+以下はAboutページの引用です。
 
-Replace sample content with your own and [configure as necessary](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
+> 「徒然なるままにRuby」は、はてなブログ「おもこん」に2022年9月から書いているシリーズが元になっています。
+> はじめはRubyの初心者向けのチュートリアルにするつもりでしたが、だんだん難しい内容のトピックも入ってきました。
+> それで、サブタイトルを「初心者から上級者までのゆるーいRubyチュートリアル」としました。
+> 
+> このチュートリアルのJekyllソースファイルは[GitHubレポジトリ](https://github.com/ToshioCP/Blog-about-Ruby)にあります。
+> その`_example`フォルダにRubyのソースコードがあるので、必要に応じて使ってください。
+> 
+> このウェブサイトは、皆様に有用であることを願っていますが、内容が正しいことを保証するものではありません。
+> このウェブサイトの内容によるいかなる損害に対しても保証はできません。
+> 例えば、次のようなケースです。
+> 
+> - このウェブサイトに基づいて作成したプログラムによる損害
+> - このウェブサイトの情報に基づいて作成した文書（書籍など)による損害
+> - その他
+> 
+> このウェブサイトの情報の活用についてはご自身の責任で行ってください。
+> 
+> Rubyは本当に素晴らしい言語です。
+> しかし、Rubyは終着点ではなく出発点です。
+> 様々なことにRubyを応用することこそが、最も面白いことだと思います。
+> 今後も興味深いトピックが見つかるごとに記事を増やしていくつもりです。
 
----
+# ライセンスは？
 
-## Troubleshooting
+このレポジトリでは
 
-If you have a question about using Jekyll, start a discussion on the [Jekyll Forum](https://talk.jekyllrb.com/) or [StackOverflow](https://stackoverflow.com/questions/tagged/jekyll). Other resources:
+- 記事はパブリックドメインです。
+- `_example`フォルダ以下のプログラムのライセンスは[GPL](https://www.gnu.org/licenses/gpl-3.0.html)です
 
-- [Ruby 101](https://jekyllrb.com/docs/ruby-101/)
-- [Setting up a Jekyll site with GitHub Pages](https://jekyllrb.com/docs/github-pages/)
-- [Configuring GitHub Metadata](https://github.com/jekyll/github-metadata/blob/master/docs/configuration.md#configuration) to work properly when developing locally and avoid `No GitHub API authentication could be found. Some fields may be missing or have incorrect data.` warnings.
+このレポジトリの内容に対して、引用、改変、配布などを自由に行えますが、その結果についての責任はその行為者にあります。
+このウェブサイトは、その結果について無保証です。

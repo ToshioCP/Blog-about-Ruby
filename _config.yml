@@ -13,16 +13,18 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MM
+title: 徒然なるままにRuby
+subtitle: 初心者から上級者までのゆるーいRubyチュートリアル
 email:
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-twitter_username: username
-github_username: username
-minimal_mistakes_skin: default
+description: 思いつくままにRubyのトピックを・・・初心者向けの内容
+twitter_username: ToshioCP
+github_username: ToshioCP
+minimal_mistakes_skin: sunrise
 search: true
+
+teaser                   : "/assets/images/tsuredure_ruby.png"
+logo                     : "/assets/images/toshio_a_88x88.png"
+og_image                 : "/assets/images/tsuredure_ruby.png"
 
 # Build settings
 markdown: kramdown
@@ -31,7 +33,8 @@ remote_theme: mmistakes/minimal-mistakes
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+locale: ja
+timezone: Asia/Tokyo
 
 include:
   - _pages
@@ -39,7 +42,8 @@ include:
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
+exclude:
+  - README.md
 #   - Gemfile
 #   - Gemfile.lock
 #   - node_modules
@@ -58,34 +62,31 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "First Lastname"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  name   : "Toshio Sekiya"
+  avatar : "/assets/images/toshio_a_88x88.png"
+  bio    : "Mathmatician/Computer scientist"
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
+    - label: "はてなブログ"
+      icon: "fas fa-pen-nib"
+      url: "https://toshiocp.com/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+      url: "https://twitter.com/ToshioCP"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/ToshioCP"
 
 footer:
   links:
+    - label: "はてなブログ"
+      icon: "fas fa-pen-nib"
+      url: "https://toshiocp.com/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+      url: "https://twitter.com/ToshioCP"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/ToshioCP"
 
 defaults:
   # _posts
@@ -96,7 +97,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
+      comments: false
       share: true
       related: true
   # _pages

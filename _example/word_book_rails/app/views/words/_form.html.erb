@@ -1,0 +1,23 @@
+<%= form_with model: @word, url: @path, method: :post do |form| %>
+  <div>
+    <%= form.label :en, "英単語", class: "form-label" %>
+    <%= form.text_field :en, value: @en, class: "form-control" %>
+    <% @word && @word.errors.full_messages_for(:en).each do |message| %>
+      <div class="text-danger"><%= "DB: 英単語は空欄にできません" if message == "En can't be blank" %></div>
+      <div class="text-danger"><%= "DB: 英文字を入力してください" if message == "En is invalid" %></div>
+      <div class="text-danger"><%= "DB: すでに同名の単語が登録されています" if message == "En has already been taken" %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :jp, "日本語訳", class: "form-label" %>
+    <%= form.text_field :jp, value: @jp, class: "form-control" %>
+    <% @word && @word.errors.full_messages_for(:jp).each do |message| %>
+      <div class="text-danger"><%= "DB: 日本語訳は空欄にできません" if message == "Jp can't be blank" %></div>
+    <% end %>
+  </div>
+
+  <div class="my-2">
+    <%= form.submit @submit,  class: "btn btn-primary" %>
+  </div>
+<% end %>

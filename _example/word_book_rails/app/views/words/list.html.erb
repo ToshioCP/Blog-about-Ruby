@@ -1,0 +1,20 @@
+<h1 class="my-2">単語検索結果</h1>
+<p>検索ワード: <%= @search_word %></p>
+<% if @words %>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">英語</th>
+        <th scope="col">日本語</th>
+      </tr>
+    </thead>
+    <tbody>
+    <% @words.each do |word| %>
+      <tr>
+        <td><%= word[:en] %></td>
+        <td><%= word[:jp] %></td>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+<% end %>

@@ -1,0 +1,2000 @@
+abcdefghij = 1
+print abcdefghij
+abcdefghji = 2
+print abcdefghji
+abcdefgihj = 3
+print abcdefgihj
+abcdefgijh = 4
+print abcdefgijh
+abcdefgjhi = 5
+print abcdefgjhi
+abcdefgjih = 6
+print abcdefgjih
+abcdefhgij = 7
+print abcdefhgij
+abcdefhgji = 8
+print abcdefhgji
+abcdefhigj = 9
+print abcdefhigj
+abcdefhijg = 10
+print abcdefhijg
+abcdefhjgi = 11
+print abcdefhjgi
+abcdefhjig = 12
+print abcdefhjig
+abcdefighj = 13
+print abcdefighj
+abcdefigjh = 14
+print abcdefigjh
+abcdefihgj = 15
+print abcdefihgj
+abcdefihjg = 16
+print abcdefihjg
+abcdefijgh = 17
+print abcdefijgh
+abcdefijhg = 18
+print abcdefijhg
+abcdefjghi = 19
+print abcdefjghi
+abcdefjgih = 20
+print abcdefjgih
+abcdefjhgi = 21
+print abcdefjhgi
+abcdefjhig = 22
+print abcdefjhig
+abcdefjigh = 23
+print abcdefjigh
+abcdefjihg = 24
+print abcdefjihg
+abcdegfhij = 25
+print abcdegfhij
+abcdegfhji = 26
+print abcdegfhji
+abcdegfihj = 27
+print abcdegfihj
+abcdegfijh = 28
+print abcdegfijh
+abcdegfjhi = 29
+print abcdegfjhi
+abcdegfjih = 30
+print abcdegfjih
+abcdeghfij = 31
+print abcdeghfij
+abcdeghfji = 32
+print abcdeghfji
+abcdeghifj = 33
+print abcdeghifj
+abcdeghijf = 34
+print abcdeghijf
+abcdeghjfi = 35
+print abcdeghjfi
+abcdeghjif = 36
+print abcdeghjif
+abcdegifhj = 37
+print abcdegifhj
+abcdegifjh = 38
+print abcdegifjh
+abcdegihfj = 39
+print abcdegihfj
+abcdegihjf = 40
+print abcdegihjf
+abcdegijfh = 41
+print abcdegijfh
+abcdegijhf = 42
+print abcdegijhf
+abcdegjfhi = 43
+print abcdegjfhi
+abcdegjfih = 44
+print abcdegjfih
+abcdegjhfi = 45
+print abcdegjhfi
+abcdegjhif = 46
+print abcdegjhif
+abcdegjifh = 47
+print abcdegjifh
+abcdegjihf = 48
+print abcdegjihf
+abcdehfgij = 49
+print abcdehfgij
+abcdehfgji = 50
+print abcdehfgji
+abcdehfigj = 51
+print abcdehfigj
+abcdehfijg = 52
+print abcdehfijg
+abcdehfjgi = 53
+print abcdehfjgi
+abcdehfjig = 54
+print abcdehfjig
+abcdehgfij = 55
+print abcdehgfij
+abcdehgfji = 56
+print abcdehgfji
+abcdehgifj = 57
+print abcdehgifj
+abcdehgijf = 58
+print abcdehgijf
+abcdehgjfi = 59
+print abcdehgjfi
+abcdehgjif = 60
+print abcdehgjif
+abcdehifgj = 61
+print abcdehifgj
+abcdehifjg = 62
+print abcdehifjg
+abcdehigfj = 63
+print abcdehigfj
+abcdehigjf = 64
+print abcdehigjf
+abcdehijfg = 65
+print abcdehijfg
+abcdehijgf = 66
+print abcdehijgf
+abcdehjfgi = 67
+print abcdehjfgi
+abcdehjfig = 68
+print abcdehjfig
+abcdehjgfi = 69
+print abcdehjgfi
+abcdehjgif = 70
+print abcdehjgif
+abcdehjifg = 71
+print abcdehjifg
+abcdehjigf = 72
+print abcdehjigf
+abcdeifghj = 73
+print abcdeifghj
+abcdeifgjh = 74
+print abcdeifgjh
+abcdeifhgj = 75
+print abcdeifhgj
+abcdeifhjg = 76
+print abcdeifhjg
+abcdeifjgh = 77
+print abcdeifjgh
+abcdeifjhg = 78
+print abcdeifjhg
+abcdeigfhj = 79
+print abcdeigfhj
+abcdeigfjh = 80
+print abcdeigfjh
+abcdeighfj = 81
+print abcdeighfj
+abcdeighjf = 82
+print abcdeighjf
+abcdeigjfh = 83
+print abcdeigjfh
+abcdeigjhf = 84
+print abcdeigjhf
+abcdeihfgj = 85
+print abcdeihfgj
+abcdeihfjg = 86
+print abcdeihfjg
+abcdeihgfj = 87
+print abcdeihgfj
+abcdeihgjf = 88
+print abcdeihgjf
+abcdeihjfg = 89
+print abcdeihjfg
+abcdeihjgf = 90
+print abcdeihjgf
+abcdeijfgh = 91
+print abcdeijfgh
+abcdeijfhg = 92
+print abcdeijfhg
+abcdeijgfh = 93
+print abcdeijgfh
+abcdeijghf = 94
+print abcdeijghf
+abcdeijhfg = 95
+print abcdeijhfg
+abcdeijhgf = 96
+print abcdeijhgf
+abcdejfghi = 97
+print abcdejfghi
+abcdejfgih = 98
+print abcdejfgih
+abcdejfhgi = 99
+print abcdejfhgi
+abcdejfhig = 100
+print abcdejfhig
+abcdejfigh = 101
+print abcdejfigh
+abcdejfihg = 102
+print abcdejfihg
+abcdejgfhi = 103
+print abcdejgfhi
+abcdejgfih = 104
+print abcdejgfih
+abcdejghfi = 105
+print abcdejghfi
+abcdejghif = 106
+print abcdejghif
+abcdejgifh = 107
+print abcdejgifh
+abcdejgihf = 108
+print abcdejgihf
+abcdejhfgi = 109
+print abcdejhfgi
+abcdejhfig = 110
+print abcdejhfig
+abcdejhgfi = 111
+print abcdejhgfi
+abcdejhgif = 112
+print abcdejhgif
+abcdejhifg = 113
+print abcdejhifg
+abcdejhigf = 114
+print abcdejhigf
+abcdejifgh = 115
+print abcdejifgh
+abcdejifhg = 116
+print abcdejifhg
+abcdejigfh = 117
+print abcdejigfh
+abcdejighf = 118
+print abcdejighf
+abcdejihfg = 119
+print abcdejihfg
+abcdejihgf = 120
+print abcdejihgf
+abcdfeghij = 121
+print abcdfeghij
+abcdfeghji = 122
+print abcdfeghji
+abcdfegihj = 123
+print abcdfegihj
+abcdfegijh = 124
+print abcdfegijh
+abcdfegjhi = 125
+print abcdfegjhi
+abcdfegjih = 126
+print abcdfegjih
+abcdfehgij = 127
+print abcdfehgij
+abcdfehgji = 128
+print abcdfehgji
+abcdfehigj = 129
+print abcdfehigj
+abcdfehijg = 130
+print abcdfehijg
+abcdfehjgi = 131
+print abcdfehjgi
+abcdfehjig = 132
+print abcdfehjig
+abcdfeighj = 133
+print abcdfeighj
+abcdfeigjh = 134
+print abcdfeigjh
+abcdfeihgj = 135
+print abcdfeihgj
+abcdfeihjg = 136
+print abcdfeihjg
+abcdfeijgh = 137
+print abcdfeijgh
+abcdfeijhg = 138
+print abcdfeijhg
+abcdfejghi = 139
+print abcdfejghi
+abcdfejgih = 140
+print abcdfejgih
+abcdfejhgi = 141
+print abcdfejhgi
+abcdfejhig = 142
+print abcdfejhig
+abcdfejigh = 143
+print abcdfejigh
+abcdfejihg = 144
+print abcdfejihg
+abcdfgehij = 145
+print abcdfgehij
+abcdfgehji = 146
+print abcdfgehji
+abcdfgeihj = 147
+print abcdfgeihj
+abcdfgeijh = 148
+print abcdfgeijh
+abcdfgejhi = 149
+print abcdfgejhi
+abcdfgejih = 150
+print abcdfgejih
+abcdfgheij = 151
+print abcdfgheij
+abcdfgheji = 152
+print abcdfgheji
+abcdfghiej = 153
+print abcdfghiej
+abcdfghije = 154
+print abcdfghije
+abcdfghjei = 155
+print abcdfghjei
+abcdfghjie = 156
+print abcdfghjie
+abcdfgiehj = 157
+print abcdfgiehj
+abcdfgiejh = 158
+print abcdfgiejh
+abcdfgihej = 159
+print abcdfgihej
+abcdfgihje = 160
+print abcdfgihje
+abcdfgijeh = 161
+print abcdfgijeh
+abcdfgijhe = 162
+print abcdfgijhe
+abcdfgjehi = 163
+print abcdfgjehi
+abcdfgjeih = 164
+print abcdfgjeih
+abcdfgjhei = 165
+print abcdfgjhei
+abcdfgjhie = 166
+print abcdfgjhie
+abcdfgjieh = 167
+print abcdfgjieh
+abcdfgjihe = 168
+print abcdfgjihe
+abcdfhegij = 169
+print abcdfhegij
+abcdfhegji = 170
+print abcdfhegji
+abcdfheigj = 171
+print abcdfheigj
+abcdfheijg = 172
+print abcdfheijg
+abcdfhejgi = 173
+print abcdfhejgi
+abcdfhejig = 174
+print abcdfhejig
+abcdfhgeij = 175
+print abcdfhgeij
+abcdfhgeji = 176
+print abcdfhgeji
+abcdfhgiej = 177
+print abcdfhgiej
+abcdfhgije = 178
+print abcdfhgije
+abcdfhgjei = 179
+print abcdfhgjei
+abcdfhgjie = 180
+print abcdfhgjie
+abcdfhiegj = 181
+print abcdfhiegj
+abcdfhiejg = 182
+print abcdfhiejg
+abcdfhigej = 183
+print abcdfhigej
+abcdfhigje = 184
+print abcdfhigje
+abcdfhijeg = 185
+print abcdfhijeg
+abcdfhijge = 186
+print abcdfhijge
+abcdfhjegi = 187
+print abcdfhjegi
+abcdfhjeig = 188
+print abcdfhjeig
+abcdfhjgei = 189
+print abcdfhjgei
+abcdfhjgie = 190
+print abcdfhjgie
+abcdfhjieg = 191
+print abcdfhjieg
+abcdfhjige = 192
+print abcdfhjige
+abcdfieghj = 193
+print abcdfieghj
+abcdfiegjh = 194
+print abcdfiegjh
+abcdfiehgj = 195
+print abcdfiehgj
+abcdfiehjg = 196
+print abcdfiehjg
+abcdfiejgh = 197
+print abcdfiejgh
+abcdfiejhg = 198
+print abcdfiejhg
+abcdfigehj = 199
+print abcdfigehj
+abcdfigejh = 200
+print abcdfigejh
+abcdfighej = 201
+print abcdfighej
+abcdfighje = 202
+print abcdfighje
+abcdfigjeh = 203
+print abcdfigjeh
+abcdfigjhe = 204
+print abcdfigjhe
+abcdfihegj = 205
+print abcdfihegj
+abcdfihejg = 206
+print abcdfihejg
+abcdfihgej = 207
+print abcdfihgej
+abcdfihgje = 208
+print abcdfihgje
+abcdfihjeg = 209
+print abcdfihjeg
+abcdfihjge = 210
+print abcdfihjge
+abcdfijegh = 211
+print abcdfijegh
+abcdfijehg = 212
+print abcdfijehg
+abcdfijgeh = 213
+print abcdfijgeh
+abcdfijghe = 214
+print abcdfijghe
+abcdfijheg = 215
+print abcdfijheg
+abcdfijhge = 216
+print abcdfijhge
+abcdfjeghi = 217
+print abcdfjeghi
+abcdfjegih = 218
+print abcdfjegih
+abcdfjehgi = 219
+print abcdfjehgi
+abcdfjehig = 220
+print abcdfjehig
+abcdfjeigh = 221
+print abcdfjeigh
+abcdfjeihg = 222
+print abcdfjeihg
+abcdfjgehi = 223
+print abcdfjgehi
+abcdfjgeih = 224
+print abcdfjgeih
+abcdfjghei = 225
+print abcdfjghei
+abcdfjghie = 226
+print abcdfjghie
+abcdfjgieh = 227
+print abcdfjgieh
+abcdfjgihe = 228
+print abcdfjgihe
+abcdfjhegi = 229
+print abcdfjhegi
+abcdfjheig = 230
+print abcdfjheig
+abcdfjhgei = 231
+print abcdfjhgei
+abcdfjhgie = 232
+print abcdfjhgie
+abcdfjhieg = 233
+print abcdfjhieg
+abcdfjhige = 234
+print abcdfjhige
+abcdfjiegh = 235
+print abcdfjiegh
+abcdfjiehg = 236
+print abcdfjiehg
+abcdfjigeh = 237
+print abcdfjigeh
+abcdfjighe = 238
+print abcdfjighe
+abcdfjiheg = 239
+print abcdfjiheg
+abcdfjihge = 240
+print abcdfjihge
+abcdgefhij = 241
+print abcdgefhij
+abcdgefhji = 242
+print abcdgefhji
+abcdgefihj = 243
+print abcdgefihj
+abcdgefijh = 244
+print abcdgefijh
+abcdgefjhi = 245
+print abcdgefjhi
+abcdgefjih = 246
+print abcdgefjih
+abcdgehfij = 247
+print abcdgehfij
+abcdgehfji = 248
+print abcdgehfji
+abcdgehifj = 249
+print abcdgehifj
+abcdgehijf = 250
+print abcdgehijf
+abcdgehjfi = 251
+print abcdgehjfi
+abcdgehjif = 252
+print abcdgehjif
+abcdgeifhj = 253
+print abcdgeifhj
+abcdgeifjh = 254
+print abcdgeifjh
+abcdgeihfj = 255
+print abcdgeihfj
+abcdgeihjf = 256
+print abcdgeihjf
+abcdgeijfh = 257
+print abcdgeijfh
+abcdgeijhf = 258
+print abcdgeijhf
+abcdgejfhi = 259
+print abcdgejfhi
+abcdgejfih = 260
+print abcdgejfih
+abcdgejhfi = 261
+print abcdgejhfi
+abcdgejhif = 262
+print abcdgejhif
+abcdgejifh = 263
+print abcdgejifh
+abcdgejihf = 264
+print abcdgejihf
+abcdgfehij = 265
+print abcdgfehij
+abcdgfehji = 266
+print abcdgfehji
+abcdgfeihj = 267
+print abcdgfeihj
+abcdgfeijh = 268
+print abcdgfeijh
+abcdgfejhi = 269
+print abcdgfejhi
+abcdgfejih = 270
+print abcdgfejih
+abcdgfheij = 271
+print abcdgfheij
+abcdgfheji = 272
+print abcdgfheji
+abcdgfhiej = 273
+print abcdgfhiej
+abcdgfhije = 274
+print abcdgfhije
+abcdgfhjei = 275
+print abcdgfhjei
+abcdgfhjie = 276
+print abcdgfhjie
+abcdgfiehj = 277
+print abcdgfiehj
+abcdgfiejh = 278
+print abcdgfiejh
+abcdgfihej = 279
+print abcdgfihej
+abcdgfihje = 280
+print abcdgfihje
+abcdgfijeh = 281
+print abcdgfijeh
+abcdgfijhe = 282
+print abcdgfijhe
+abcdgfjehi = 283
+print abcdgfjehi
+abcdgfjeih = 284
+print abcdgfjeih
+abcdgfjhei = 285
+print abcdgfjhei
+abcdgfjhie = 286
+print abcdgfjhie
+abcdgfjieh = 287
+print abcdgfjieh
+abcdgfjihe = 288
+print abcdgfjihe
+abcdghefij = 289
+print abcdghefij
+abcdghefji = 290
+print abcdghefji
+abcdgheifj = 291
+print abcdgheifj
+abcdgheijf = 292
+print abcdgheijf
+abcdghejfi = 293
+print abcdghejfi
+abcdghejif = 294
+print abcdghejif
+abcdghfeij = 295
+print abcdghfeij
+abcdghfeji = 296
+print abcdghfeji
+abcdghfiej = 297
+print abcdghfiej
+abcdghfije = 298
+print abcdghfije
+abcdghfjei = 299
+print abcdghfjei
+abcdghfjie = 300
+print abcdghfjie
+abcdghiefj = 301
+print abcdghiefj
+abcdghiejf = 302
+print abcdghiejf
+abcdghifej = 303
+print abcdghifej
+abcdghifje = 304
+print abcdghifje
+abcdghijef = 305
+print abcdghijef
+abcdghijfe = 306
+print abcdghijfe
+abcdghjefi = 307
+print abcdghjefi
+abcdghjeif = 308
+print abcdghjeif
+abcdghjfei = 309
+print abcdghjfei
+abcdghjfie = 310
+print abcdghjfie
+abcdghjief = 311
+print abcdghjief
+abcdghjife = 312
+print abcdghjife
+abcdgiefhj = 313
+print abcdgiefhj
+abcdgiefjh = 314
+print abcdgiefjh
+abcdgiehfj = 315
+print abcdgiehfj
+abcdgiehjf = 316
+print abcdgiehjf
+abcdgiejfh = 317
+print abcdgiejfh
+abcdgiejhf = 318
+print abcdgiejhf
+abcdgifehj = 319
+print abcdgifehj
+abcdgifejh = 320
+print abcdgifejh
+abcdgifhej = 321
+print abcdgifhej
+abcdgifhje = 322
+print abcdgifhje
+abcdgifjeh = 323
+print abcdgifjeh
+abcdgifjhe = 324
+print abcdgifjhe
+abcdgihefj = 325
+print abcdgihefj
+abcdgihejf = 326
+print abcdgihejf
+abcdgihfej = 327
+print abcdgihfej
+abcdgihfje = 328
+print abcdgihfje
+abcdgihjef = 329
+print abcdgihjef
+abcdgihjfe = 330
+print abcdgihjfe
+abcdgijefh = 331
+print abcdgijefh
+abcdgijehf = 332
+print abcdgijehf
+abcdgijfeh = 333
+print abcdgijfeh
+abcdgijfhe = 334
+print abcdgijfhe
+abcdgijhef = 335
+print abcdgijhef
+abcdgijhfe = 336
+print abcdgijhfe
+abcdgjefhi = 337
+print abcdgjefhi
+abcdgjefih = 338
+print abcdgjefih
+abcdgjehfi = 339
+print abcdgjehfi
+abcdgjehif = 340
+print abcdgjehif
+abcdgjeifh = 341
+print abcdgjeifh
+abcdgjeihf = 342
+print abcdgjeihf
+abcdgjfehi = 343
+print abcdgjfehi
+abcdgjfeih = 344
+print abcdgjfeih
+abcdgjfhei = 345
+print abcdgjfhei
+abcdgjfhie = 346
+print abcdgjfhie
+abcdgjfieh = 347
+print abcdgjfieh
+abcdgjfihe = 348
+print abcdgjfihe
+abcdgjhefi = 349
+print abcdgjhefi
+abcdgjheif = 350
+print abcdgjheif
+abcdgjhfei = 351
+print abcdgjhfei
+abcdgjhfie = 352
+print abcdgjhfie
+abcdgjhief = 353
+print abcdgjhief
+abcdgjhife = 354
+print abcdgjhife
+abcdgjiefh = 355
+print abcdgjiefh
+abcdgjiehf = 356
+print abcdgjiehf
+abcdgjifeh = 357
+print abcdgjifeh
+abcdgjifhe = 358
+print abcdgjifhe
+abcdgjihef = 359
+print abcdgjihef
+abcdgjihfe = 360
+print abcdgjihfe
+abcdhefgij = 361
+print abcdhefgij
+abcdhefgji = 362
+print abcdhefgji
+abcdhefigj = 363
+print abcdhefigj
+abcdhefijg = 364
+print abcdhefijg
+abcdhefjgi = 365
+print abcdhefjgi
+abcdhefjig = 366
+print abcdhefjig
+abcdhegfij = 367
+print abcdhegfij
+abcdhegfji = 368
+print abcdhegfji
+abcdhegifj = 369
+print abcdhegifj
+abcdhegijf = 370
+print abcdhegijf
+abcdhegjfi = 371
+print abcdhegjfi
+abcdhegjif = 372
+print abcdhegjif
+abcdheifgj = 373
+print abcdheifgj
+abcdheifjg = 374
+print abcdheifjg
+abcdheigfj = 375
+print abcdheigfj
+abcdheigjf = 376
+print abcdheigjf
+abcdheijfg = 377
+print abcdheijfg
+abcdheijgf = 378
+print abcdheijgf
+abcdhejfgi = 379
+print abcdhejfgi
+abcdhejfig = 380
+print abcdhejfig
+abcdhejgfi = 381
+print abcdhejgfi
+abcdhejgif = 382
+print abcdhejgif
+abcdhejifg = 383
+print abcdhejifg
+abcdhejigf = 384
+print abcdhejigf
+abcdhfegij = 385
+print abcdhfegij
+abcdhfegji = 386
+print abcdhfegji
+abcdhfeigj = 387
+print abcdhfeigj
+abcdhfeijg = 388
+print abcdhfeijg
+abcdhfejgi = 389
+print abcdhfejgi
+abcdhfejig = 390
+print abcdhfejig
+abcdhfgeij = 391
+print abcdhfgeij
+abcdhfgeji = 392
+print abcdhfgeji
+abcdhfgiej = 393
+print abcdhfgiej
+abcdhfgije = 394
+print abcdhfgije
+abcdhfgjei = 395
+print abcdhfgjei
+abcdhfgjie = 396
+print abcdhfgjie
+abcdhfiegj = 397
+print abcdhfiegj
+abcdhfiejg = 398
+print abcdhfiejg
+abcdhfigej = 399
+print abcdhfigej
+abcdhfigje = 400
+print abcdhfigje
+abcdhfijeg = 401
+print abcdhfijeg
+abcdhfijge = 402
+print abcdhfijge
+abcdhfjegi = 403
+print abcdhfjegi
+abcdhfjeig = 404
+print abcdhfjeig
+abcdhfjgei = 405
+print abcdhfjgei
+abcdhfjgie = 406
+print abcdhfjgie
+abcdhfjieg = 407
+print abcdhfjieg
+abcdhfjige = 408
+print abcdhfjige
+abcdhgefij = 409
+print abcdhgefij
+abcdhgefji = 410
+print abcdhgefji
+abcdhgeifj = 411
+print abcdhgeifj
+abcdhgeijf = 412
+print abcdhgeijf
+abcdhgejfi = 413
+print abcdhgejfi
+abcdhgejif = 414
+print abcdhgejif
+abcdhgfeij = 415
+print abcdhgfeij
+abcdhgfeji = 416
+print abcdhgfeji
+abcdhgfiej = 417
+print abcdhgfiej
+abcdhgfije = 418
+print abcdhgfije
+abcdhgfjei = 419
+print abcdhgfjei
+abcdhgfjie = 420
+print abcdhgfjie
+abcdhgiefj = 421
+print abcdhgiefj
+abcdhgiejf = 422
+print abcdhgiejf
+abcdhgifej = 423
+print abcdhgifej
+abcdhgifje = 424
+print abcdhgifje
+abcdhgijef = 425
+print abcdhgijef
+abcdhgijfe = 426
+print abcdhgijfe
+abcdhgjefi = 427
+print abcdhgjefi
+abcdhgjeif = 428
+print abcdhgjeif
+abcdhgjfei = 429
+print abcdhgjfei
+abcdhgjfie = 430
+print abcdhgjfie
+abcdhgjief = 431
+print abcdhgjief
+abcdhgjife = 432
+print abcdhgjife
+abcdhiefgj = 433
+print abcdhiefgj
+abcdhiefjg = 434
+print abcdhiefjg
+abcdhiegfj = 435
+print abcdhiegfj
+abcdhiegjf = 436
+print abcdhiegjf
+abcdhiejfg = 437
+print abcdhiejfg
+abcdhiejgf = 438
+print abcdhiejgf
+abcdhifegj = 439
+print abcdhifegj
+abcdhifejg = 440
+print abcdhifejg
+abcdhifgej = 441
+print abcdhifgej
+abcdhifgje = 442
+print abcdhifgje
+abcdhifjeg = 443
+print abcdhifjeg
+abcdhifjge = 444
+print abcdhifjge
+abcdhigefj = 445
+print abcdhigefj
+abcdhigejf = 446
+print abcdhigejf
+abcdhigfej = 447
+print abcdhigfej
+abcdhigfje = 448
+print abcdhigfje
+abcdhigjef = 449
+print abcdhigjef
+abcdhigjfe = 450
+print abcdhigjfe
+abcdhijefg = 451
+print abcdhijefg
+abcdhijegf = 452
+print abcdhijegf
+abcdhijfeg = 453
+print abcdhijfeg
+abcdhijfge = 454
+print abcdhijfge
+abcdhijgef = 455
+print abcdhijgef
+abcdhijgfe = 456
+print abcdhijgfe
+abcdhjefgi = 457
+print abcdhjefgi
+abcdhjefig = 458
+print abcdhjefig
+abcdhjegfi = 459
+print abcdhjegfi
+abcdhjegif = 460
+print abcdhjegif
+abcdhjeifg = 461
+print abcdhjeifg
+abcdhjeigf = 462
+print abcdhjeigf
+abcdhjfegi = 463
+print abcdhjfegi
+abcdhjfeig = 464
+print abcdhjfeig
+abcdhjfgei = 465
+print abcdhjfgei
+abcdhjfgie = 466
+print abcdhjfgie
+abcdhjfieg = 467
+print abcdhjfieg
+abcdhjfige = 468
+print abcdhjfige
+abcdhjgefi = 469
+print abcdhjgefi
+abcdhjgeif = 470
+print abcdhjgeif
+abcdhjgfei = 471
+print abcdhjgfei
+abcdhjgfie = 472
+print abcdhjgfie
+abcdhjgief = 473
+print abcdhjgief
+abcdhjgife = 474
+print abcdhjgife
+abcdhjiefg = 475
+print abcdhjiefg
+abcdhjiegf = 476
+print abcdhjiegf
+abcdhjifeg = 477
+print abcdhjifeg
+abcdhjifge = 478
+print abcdhjifge
+abcdhjigef = 479
+print abcdhjigef
+abcdhjigfe = 480
+print abcdhjigfe
+abcdiefghj = 481
+print abcdiefghj
+abcdiefgjh = 482
+print abcdiefgjh
+abcdiefhgj = 483
+print abcdiefhgj
+abcdiefhjg = 484
+print abcdiefhjg
+abcdiefjgh = 485
+print abcdiefjgh
+abcdiefjhg = 486
+print abcdiefjhg
+abcdiegfhj = 487
+print abcdiegfhj
+abcdiegfjh = 488
+print abcdiegfjh
+abcdieghfj = 489
+print abcdieghfj
+abcdieghjf = 490
+print abcdieghjf
+abcdiegjfh = 491
+print abcdiegjfh
+abcdiegjhf = 492
+print abcdiegjhf
+abcdiehfgj = 493
+print abcdiehfgj
+abcdiehfjg = 494
+print abcdiehfjg
+abcdiehgfj = 495
+print abcdiehgfj
+abcdiehgjf = 496
+print abcdiehgjf
+abcdiehjfg = 497
+print abcdiehjfg
+abcdiehjgf = 498
+print abcdiehjgf
+abcdiejfgh = 499
+print abcdiejfgh
+abcdiejfhg = 500
+print abcdiejfhg
+abcdiejgfh = 501
+print abcdiejgfh
+abcdiejghf = 502
+print abcdiejghf
+abcdiejhfg = 503
+print abcdiejhfg
+abcdiejhgf = 504
+print abcdiejhgf
+abcdifeghj = 505
+print abcdifeghj
+abcdifegjh = 506
+print abcdifegjh
+abcdifehgj = 507
+print abcdifehgj
+abcdifehjg = 508
+print abcdifehjg
+abcdifejgh = 509
+print abcdifejgh
+abcdifejhg = 510
+print abcdifejhg
+abcdifgehj = 511
+print abcdifgehj
+abcdifgejh = 512
+print abcdifgejh
+abcdifghej = 513
+print abcdifghej
+abcdifghje = 514
+print abcdifghje
+abcdifgjeh = 515
+print abcdifgjeh
+abcdifgjhe = 516
+print abcdifgjhe
+abcdifhegj = 517
+print abcdifhegj
+abcdifhejg = 518
+print abcdifhejg
+abcdifhgej = 519
+print abcdifhgej
+abcdifhgje = 520
+print abcdifhgje
+abcdifhjeg = 521
+print abcdifhjeg
+abcdifhjge = 522
+print abcdifhjge
+abcdifjegh = 523
+print abcdifjegh
+abcdifjehg = 524
+print abcdifjehg
+abcdifjgeh = 525
+print abcdifjgeh
+abcdifjghe = 526
+print abcdifjghe
+abcdifjheg = 527
+print abcdifjheg
+abcdifjhge = 528
+print abcdifjhge
+abcdigefhj = 529
+print abcdigefhj
+abcdigefjh = 530
+print abcdigefjh
+abcdigehfj = 531
+print abcdigehfj
+abcdigehjf = 532
+print abcdigehjf
+abcdigejfh = 533
+print abcdigejfh
+abcdigejhf = 534
+print abcdigejhf
+abcdigfehj = 535
+print abcdigfehj
+abcdigfejh = 536
+print abcdigfejh
+abcdigfhej = 537
+print abcdigfhej
+abcdigfhje = 538
+print abcdigfhje
+abcdigfjeh = 539
+print abcdigfjeh
+abcdigfjhe = 540
+print abcdigfjhe
+abcdighefj = 541
+print abcdighefj
+abcdighejf = 542
+print abcdighejf
+abcdighfej = 543
+print abcdighfej
+abcdighfje = 544
+print abcdighfje
+abcdighjef = 545
+print abcdighjef
+abcdighjfe = 546
+print abcdighjfe
+abcdigjefh = 547
+print abcdigjefh
+abcdigjehf = 548
+print abcdigjehf
+abcdigjfeh = 549
+print abcdigjfeh
+abcdigjfhe = 550
+print abcdigjfhe
+abcdigjhef = 551
+print abcdigjhef
+abcdigjhfe = 552
+print abcdigjhfe
+abcdihefgj = 553
+print abcdihefgj
+abcdihefjg = 554
+print abcdihefjg
+abcdihegfj = 555
+print abcdihegfj
+abcdihegjf = 556
+print abcdihegjf
+abcdihejfg = 557
+print abcdihejfg
+abcdihejgf = 558
+print abcdihejgf
+abcdihfegj = 559
+print abcdihfegj
+abcdihfejg = 560
+print abcdihfejg
+abcdihfgej = 561
+print abcdihfgej
+abcdihfgje = 562
+print abcdihfgje
+abcdihfjeg = 563
+print abcdihfjeg
+abcdihfjge = 564
+print abcdihfjge
+abcdihgefj = 565
+print abcdihgefj
+abcdihgejf = 566
+print abcdihgejf
+abcdihgfej = 567
+print abcdihgfej
+abcdihgfje = 568
+print abcdihgfje
+abcdihgjef = 569
+print abcdihgjef
+abcdihgjfe = 570
+print abcdihgjfe
+abcdihjefg = 571
+print abcdihjefg
+abcdihjegf = 572
+print abcdihjegf
+abcdihjfeg = 573
+print abcdihjfeg
+abcdihjfge = 574
+print abcdihjfge
+abcdihjgef = 575
+print abcdihjgef
+abcdihjgfe = 576
+print abcdihjgfe
+abcdijefgh = 577
+print abcdijefgh
+abcdijefhg = 578
+print abcdijefhg
+abcdijegfh = 579
+print abcdijegfh
+abcdijeghf = 580
+print abcdijeghf
+abcdijehfg = 581
+print abcdijehfg
+abcdijehgf = 582
+print abcdijehgf
+abcdijfegh = 583
+print abcdijfegh
+abcdijfehg = 584
+print abcdijfehg
+abcdijfgeh = 585
+print abcdijfgeh
+abcdijfghe = 586
+print abcdijfghe
+abcdijfheg = 587
+print abcdijfheg
+abcdijfhge = 588
+print abcdijfhge
+abcdijgefh = 589
+print abcdijgefh
+abcdijgehf = 590
+print abcdijgehf
+abcdijgfeh = 591
+print abcdijgfeh
+abcdijgfhe = 592
+print abcdijgfhe
+abcdijghef = 593
+print abcdijghef
+abcdijghfe = 594
+print abcdijghfe
+abcdijhefg = 595
+print abcdijhefg
+abcdijhegf = 596
+print abcdijhegf
+abcdijhfeg = 597
+print abcdijhfeg
+abcdijhfge = 598
+print abcdijhfge
+abcdijhgef = 599
+print abcdijhgef
+abcdijhgfe = 600
+print abcdijhgfe
+abcdjefghi = 601
+print abcdjefghi
+abcdjefgih = 602
+print abcdjefgih
+abcdjefhgi = 603
+print abcdjefhgi
+abcdjefhig = 604
+print abcdjefhig
+abcdjefigh = 605
+print abcdjefigh
+abcdjefihg = 606
+print abcdjefihg
+abcdjegfhi = 607
+print abcdjegfhi
+abcdjegfih = 608
+print abcdjegfih
+abcdjeghfi = 609
+print abcdjeghfi
+abcdjeghif = 610
+print abcdjeghif
+abcdjegifh = 611
+print abcdjegifh
+abcdjegihf = 612
+print abcdjegihf
+abcdjehfgi = 613
+print abcdjehfgi
+abcdjehfig = 614
+print abcdjehfig
+abcdjehgfi = 615
+print abcdjehgfi
+abcdjehgif = 616
+print abcdjehgif
+abcdjehifg = 617
+print abcdjehifg
+abcdjehigf = 618
+print abcdjehigf
+abcdjeifgh = 619
+print abcdjeifgh
+abcdjeifhg = 620
+print abcdjeifhg
+abcdjeigfh = 621
+print abcdjeigfh
+abcdjeighf = 622
+print abcdjeighf
+abcdjeihfg = 623
+print abcdjeihfg
+abcdjeihgf = 624
+print abcdjeihgf
+abcdjfeghi = 625
+print abcdjfeghi
+abcdjfegih = 626
+print abcdjfegih
+abcdjfehgi = 627
+print abcdjfehgi
+abcdjfehig = 628
+print abcdjfehig
+abcdjfeigh = 629
+print abcdjfeigh
+abcdjfeihg = 630
+print abcdjfeihg
+abcdjfgehi = 631
+print abcdjfgehi
+abcdjfgeih = 632
+print abcdjfgeih
+abcdjfghei = 633
+print abcdjfghei
+abcdjfghie = 634
+print abcdjfghie
+abcdjfgieh = 635
+print abcdjfgieh
+abcdjfgihe = 636
+print abcdjfgihe
+abcdjfhegi = 637
+print abcdjfhegi
+abcdjfheig = 638
+print abcdjfheig
+abcdjfhgei = 639
+print abcdjfhgei
+abcdjfhgie = 640
+print abcdjfhgie
+abcdjfhieg = 641
+print abcdjfhieg
+abcdjfhige = 642
+print abcdjfhige
+abcdjfiegh = 643
+print abcdjfiegh
+abcdjfiehg = 644
+print abcdjfiehg
+abcdjfigeh = 645
+print abcdjfigeh
+abcdjfighe = 646
+print abcdjfighe
+abcdjfiheg = 647
+print abcdjfiheg
+abcdjfihge = 648
+print abcdjfihge
+abcdjgefhi = 649
+print abcdjgefhi
+abcdjgefih = 650
+print abcdjgefih
+abcdjgehfi = 651
+print abcdjgehfi
+abcdjgehif = 652
+print abcdjgehif
+abcdjgeifh = 653
+print abcdjgeifh
+abcdjgeihf = 654
+print abcdjgeihf
+abcdjgfehi = 655
+print abcdjgfehi
+abcdjgfeih = 656
+print abcdjgfeih
+abcdjgfhei = 657
+print abcdjgfhei
+abcdjgfhie = 658
+print abcdjgfhie
+abcdjgfieh = 659
+print abcdjgfieh
+abcdjgfihe = 660
+print abcdjgfihe
+abcdjghefi = 661
+print abcdjghefi
+abcdjgheif = 662
+print abcdjgheif
+abcdjghfei = 663
+print abcdjghfei
+abcdjghfie = 664
+print abcdjghfie
+abcdjghief = 665
+print abcdjghief
+abcdjghife = 666
+print abcdjghife
+abcdjgiefh = 667
+print abcdjgiefh
+abcdjgiehf = 668
+print abcdjgiehf
+abcdjgifeh = 669
+print abcdjgifeh
+abcdjgifhe = 670
+print abcdjgifhe
+abcdjgihef = 671
+print abcdjgihef
+abcdjgihfe = 672
+print abcdjgihfe
+abcdjhefgi = 673
+print abcdjhefgi
+abcdjhefig = 674
+print abcdjhefig
+abcdjhegfi = 675
+print abcdjhegfi
+abcdjhegif = 676
+print abcdjhegif
+abcdjheifg = 677
+print abcdjheifg
+abcdjheigf = 678
+print abcdjheigf
+abcdjhfegi = 679
+print abcdjhfegi
+abcdjhfeig = 680
+print abcdjhfeig
+abcdjhfgei = 681
+print abcdjhfgei
+abcdjhfgie = 682
+print abcdjhfgie
+abcdjhfieg = 683
+print abcdjhfieg
+abcdjhfige = 684
+print abcdjhfige
+abcdjhgefi = 685
+print abcdjhgefi
+abcdjhgeif = 686
+print abcdjhgeif
+abcdjhgfei = 687
+print abcdjhgfei
+abcdjhgfie = 688
+print abcdjhgfie
+abcdjhgief = 689
+print abcdjhgief
+abcdjhgife = 690
+print abcdjhgife
+abcdjhiefg = 691
+print abcdjhiefg
+abcdjhiegf = 692
+print abcdjhiegf
+abcdjhifeg = 693
+print abcdjhifeg
+abcdjhifge = 694
+print abcdjhifge
+abcdjhigef = 695
+print abcdjhigef
+abcdjhigfe = 696
+print abcdjhigfe
+abcdjiefgh = 697
+print abcdjiefgh
+abcdjiefhg = 698
+print abcdjiefhg
+abcdjiegfh = 699
+print abcdjiegfh
+abcdjieghf = 700
+print abcdjieghf
+abcdjiehfg = 701
+print abcdjiehfg
+abcdjiehgf = 702
+print abcdjiehgf
+abcdjifegh = 703
+print abcdjifegh
+abcdjifehg = 704
+print abcdjifehg
+abcdjifgeh = 705
+print abcdjifgeh
+abcdjifghe = 706
+print abcdjifghe
+abcdjifheg = 707
+print abcdjifheg
+abcdjifhge = 708
+print abcdjifhge
+abcdjigefh = 709
+print abcdjigefh
+abcdjigehf = 710
+print abcdjigehf
+abcdjigfeh = 711
+print abcdjigfeh
+abcdjigfhe = 712
+print abcdjigfhe
+abcdjighef = 713
+print abcdjighef
+abcdjighfe = 714
+print abcdjighfe
+abcdjihefg = 715
+print abcdjihefg
+abcdjihegf = 716
+print abcdjihegf
+abcdjihfeg = 717
+print abcdjihfeg
+abcdjihfge = 718
+print abcdjihfge
+abcdjihgef = 719
+print abcdjihgef
+abcdjihgfe = 720
+print abcdjihgfe
+abcedfghij = 721
+print abcedfghij
+abcedfghji = 722
+print abcedfghji
+abcedfgihj = 723
+print abcedfgihj
+abcedfgijh = 724
+print abcedfgijh
+abcedfgjhi = 725
+print abcedfgjhi
+abcedfgjih = 726
+print abcedfgjih
+abcedfhgij = 727
+print abcedfhgij
+abcedfhgji = 728
+print abcedfhgji
+abcedfhigj = 729
+print abcedfhigj
+abcedfhijg = 730
+print abcedfhijg
+abcedfhjgi = 731
+print abcedfhjgi
+abcedfhjig = 732
+print abcedfhjig
+abcedfighj = 733
+print abcedfighj
+abcedfigjh = 734
+print abcedfigjh
+abcedfihgj = 735
+print abcedfihgj
+abcedfihjg = 736
+print abcedfihjg
+abcedfijgh = 737
+print abcedfijgh
+abcedfijhg = 738
+print abcedfijhg
+abcedfjghi = 739
+print abcedfjghi
+abcedfjgih = 740
+print abcedfjgih
+abcedfjhgi = 741
+print abcedfjhgi
+abcedfjhig = 742
+print abcedfjhig
+abcedfjigh = 743
+print abcedfjigh
+abcedfjihg = 744
+print abcedfjihg
+abcedgfhij = 745
+print abcedgfhij
+abcedgfhji = 746
+print abcedgfhji
+abcedgfihj = 747
+print abcedgfihj
+abcedgfijh = 748
+print abcedgfijh
+abcedgfjhi = 749
+print abcedgfjhi
+abcedgfjih = 750
+print abcedgfjih
+abcedghfij = 751
+print abcedghfij
+abcedghfji = 752
+print abcedghfji
+abcedghifj = 753
+print abcedghifj
+abcedghijf = 754
+print abcedghijf
+abcedghjfi = 755
+print abcedghjfi
+abcedghjif = 756
+print abcedghjif
+abcedgifhj = 757
+print abcedgifhj
+abcedgifjh = 758
+print abcedgifjh
+abcedgihfj = 759
+print abcedgihfj
+abcedgihjf = 760
+print abcedgihjf
+abcedgijfh = 761
+print abcedgijfh
+abcedgijhf = 762
+print abcedgijhf
+abcedgjfhi = 763
+print abcedgjfhi
+abcedgjfih = 764
+print abcedgjfih
+abcedgjhfi = 765
+print abcedgjhfi
+abcedgjhif = 766
+print abcedgjhif
+abcedgjifh = 767
+print abcedgjifh
+abcedgjihf = 768
+print abcedgjihf
+abcedhfgij = 769
+print abcedhfgij
+abcedhfgji = 770
+print abcedhfgji
+abcedhfigj = 771
+print abcedhfigj
+abcedhfijg = 772
+print abcedhfijg
+abcedhfjgi = 773
+print abcedhfjgi
+abcedhfjig = 774
+print abcedhfjig
+abcedhgfij = 775
+print abcedhgfij
+abcedhgfji = 776
+print abcedhgfji
+abcedhgifj = 777
+print abcedhgifj
+abcedhgijf = 778
+print abcedhgijf
+abcedhgjfi = 779
+print abcedhgjfi
+abcedhgjif = 780
+print abcedhgjif
+abcedhifgj = 781
+print abcedhifgj
+abcedhifjg = 782
+print abcedhifjg
+abcedhigfj = 783
+print abcedhigfj
+abcedhigjf = 784
+print abcedhigjf
+abcedhijfg = 785
+print abcedhijfg
+abcedhijgf = 786
+print abcedhijgf
+abcedhjfgi = 787
+print abcedhjfgi
+abcedhjfig = 788
+print abcedhjfig
+abcedhjgfi = 789
+print abcedhjgfi
+abcedhjgif = 790
+print abcedhjgif
+abcedhjifg = 791
+print abcedhjifg
+abcedhjigf = 792
+print abcedhjigf
+abcedifghj = 793
+print abcedifghj
+abcedifgjh = 794
+print abcedifgjh
+abcedifhgj = 795
+print abcedifhgj
+abcedifhjg = 796
+print abcedifhjg
+abcedifjgh = 797
+print abcedifjgh
+abcedifjhg = 798
+print abcedifjhg
+abcedigfhj = 799
+print abcedigfhj
+abcedigfjh = 800
+print abcedigfjh
+abcedighfj = 801
+print abcedighfj
+abcedighjf = 802
+print abcedighjf
+abcedigjfh = 803
+print abcedigjfh
+abcedigjhf = 804
+print abcedigjhf
+abcedihfgj = 805
+print abcedihfgj
+abcedihfjg = 806
+print abcedihfjg
+abcedihgfj = 807
+print abcedihgfj
+abcedihgjf = 808
+print abcedihgjf
+abcedihjfg = 809
+print abcedihjfg
+abcedihjgf = 810
+print abcedihjgf
+abcedijfgh = 811
+print abcedijfgh
+abcedijfhg = 812
+print abcedijfhg
+abcedijgfh = 813
+print abcedijgfh
+abcedijghf = 814
+print abcedijghf
+abcedijhfg = 815
+print abcedijhfg
+abcedijhgf = 816
+print abcedijhgf
+abcedjfghi = 817
+print abcedjfghi
+abcedjfgih = 818
+print abcedjfgih
+abcedjfhgi = 819
+print abcedjfhgi
+abcedjfhig = 820
+print abcedjfhig
+abcedjfigh = 821
+print abcedjfigh
+abcedjfihg = 822
+print abcedjfihg
+abcedjgfhi = 823
+print abcedjgfhi
+abcedjgfih = 824
+print abcedjgfih
+abcedjghfi = 825
+print abcedjghfi
+abcedjghif = 826
+print abcedjghif
+abcedjgifh = 827
+print abcedjgifh
+abcedjgihf = 828
+print abcedjgihf
+abcedjhfgi = 829
+print abcedjhfgi
+abcedjhfig = 830
+print abcedjhfig
+abcedjhgfi = 831
+print abcedjhgfi
+abcedjhgif = 832
+print abcedjhgif
+abcedjhifg = 833
+print abcedjhifg
+abcedjhigf = 834
+print abcedjhigf
+abcedjifgh = 835
+print abcedjifgh
+abcedjifhg = 836
+print abcedjifhg
+abcedjigfh = 837
+print abcedjigfh
+abcedjighf = 838
+print abcedjighf
+abcedjihfg = 839
+print abcedjihfg
+abcedjihgf = 840
+print abcedjihgf
+abcefdghij = 841
+print abcefdghij
+abcefdghji = 842
+print abcefdghji
+abcefdgihj = 843
+print abcefdgihj
+abcefdgijh = 844
+print abcefdgijh
+abcefdgjhi = 845
+print abcefdgjhi
+abcefdgjih = 846
+print abcefdgjih
+abcefdhgij = 847
+print abcefdhgij
+abcefdhgji = 848
+print abcefdhgji
+abcefdhigj = 849
+print abcefdhigj
+abcefdhijg = 850
+print abcefdhijg
+abcefdhjgi = 851
+print abcefdhjgi
+abcefdhjig = 852
+print abcefdhjig
+abcefdighj = 853
+print abcefdighj
+abcefdigjh = 854
+print abcefdigjh
+abcefdihgj = 855
+print abcefdihgj
+abcefdihjg = 856
+print abcefdihjg
+abcefdijgh = 857
+print abcefdijgh
+abcefdijhg = 858
+print abcefdijhg
+abcefdjghi = 859
+print abcefdjghi
+abcefdjgih = 860
+print abcefdjgih
+abcefdjhgi = 861
+print abcefdjhgi
+abcefdjhig = 862
+print abcefdjhig
+abcefdjigh = 863
+print abcefdjigh
+abcefdjihg = 864
+print abcefdjihg
+abcefgdhij = 865
+print abcefgdhij
+abcefgdhji = 866
+print abcefgdhji
+abcefgdihj = 867
+print abcefgdihj
+abcefgdijh = 868
+print abcefgdijh
+abcefgdjhi = 869
+print abcefgdjhi
+abcefgdjih = 870
+print abcefgdjih
+abcefghdij = 871
+print abcefghdij
+abcefghdji = 872
+print abcefghdji
+abcefghidj = 873
+print abcefghidj
+abcefghijd = 874
+print abcefghijd
+abcefghjdi = 875
+print abcefghjdi
+abcefghjid = 876
+print abcefghjid
+abcefgidhj = 877
+print abcefgidhj
+abcefgidjh = 878
+print abcefgidjh
+abcefgihdj = 879
+print abcefgihdj
+abcefgihjd = 880
+print abcefgihjd
+abcefgijdh = 881
+print abcefgijdh
+abcefgijhd = 882
+print abcefgijhd
+abcefgjdhi = 883
+print abcefgjdhi
+abcefgjdih = 884
+print abcefgjdih
+abcefgjhdi = 885
+print abcefgjhdi
+abcefgjhid = 886
+print abcefgjhid
+abcefgjidh = 887
+print abcefgjidh
+abcefgjihd = 888
+print abcefgjihd
+abcefhdgij = 889
+print abcefhdgij
+abcefhdgji = 890
+print abcefhdgji
+abcefhdigj = 891
+print abcefhdigj
+abcefhdijg = 892
+print abcefhdijg
+abcefhdjgi = 893
+print abcefhdjgi
+abcefhdjig = 894
+print abcefhdjig
+abcefhgdij = 895
+print abcefhgdij
+abcefhgdji = 896
+print abcefhgdji
+abcefhgidj = 897
+print abcefhgidj
+abcefhgijd = 898
+print abcefhgijd
+abcefhgjdi = 899
+print abcefhgjdi
+abcefhgjid = 900
+print abcefhgjid
+abcefhidgj = 901
+print abcefhidgj
+abcefhidjg = 902
+print abcefhidjg
+abcefhigdj = 903
+print abcefhigdj
+abcefhigjd = 904
+print abcefhigjd
+abcefhijdg = 905
+print abcefhijdg
+abcefhijgd = 906
+print abcefhijgd
+abcefhjdgi = 907
+print abcefhjdgi
+abcefhjdig = 908
+print abcefhjdig
+abcefhjgdi = 909
+print abcefhjgdi
+abcefhjgid = 910
+print abcefhjgid
+abcefhjidg = 911
+print abcefhjidg
+abcefhjigd = 912
+print abcefhjigd
+abcefidghj = 913
+print abcefidghj
+abcefidgjh = 914
+print abcefidgjh
+abcefidhgj = 915
+print abcefidhgj
+abcefidhjg = 916
+print abcefidhjg
+abcefidjgh = 917
+print abcefidjgh
+abcefidjhg = 918
+print abcefidjhg
+abcefigdhj = 919
+print abcefigdhj
+abcefigdjh = 920
+print abcefigdjh
+abcefighdj = 921
+print abcefighdj
+abcefighjd = 922
+print abcefighjd
+abcefigjdh = 923
+print abcefigjdh
+abcefigjhd = 924
+print abcefigjhd
+abcefihdgj = 925
+print abcefihdgj
+abcefihdjg = 926
+print abcefihdjg
+abcefihgdj = 927
+print abcefihgdj
+abcefihgjd = 928
+print abcefihgjd
+abcefihjdg = 929
+print abcefihjdg
+abcefihjgd = 930
+print abcefihjgd
+abcefijdgh = 931
+print abcefijdgh
+abcefijdhg = 932
+print abcefijdhg
+abcefijgdh = 933
+print abcefijgdh
+abcefijghd = 934
+print abcefijghd
+abcefijhdg = 935
+print abcefijhdg
+abcefijhgd = 936
+print abcefijhgd
+abcefjdghi = 937
+print abcefjdghi
+abcefjdgih = 938
+print abcefjdgih
+abcefjdhgi = 939
+print abcefjdhgi
+abcefjdhig = 940
+print abcefjdhig
+abcefjdigh = 941
+print abcefjdigh
+abcefjdihg = 942
+print abcefjdihg
+abcefjgdhi = 943
+print abcefjgdhi
+abcefjgdih = 944
+print abcefjgdih
+abcefjghdi = 945
+print abcefjghdi
+abcefjghid = 946
+print abcefjghid
+abcefjgidh = 947
+print abcefjgidh
+abcefjgihd = 948
+print abcefjgihd
+abcefjhdgi = 949
+print abcefjhdgi
+abcefjhdig = 950
+print abcefjhdig
+abcefjhgdi = 951
+print abcefjhgdi
+abcefjhgid = 952
+print abcefjhgid
+abcefjhidg = 953
+print abcefjhidg
+abcefjhigd = 954
+print abcefjhigd
+abcefjidgh = 955
+print abcefjidgh
+abcefjidhg = 956
+print abcefjidhg
+abcefjigdh = 957
+print abcefjigdh
+abcefjighd = 958
+print abcefjighd
+abcefjihdg = 959
+print abcefjihdg
+abcefjihgd = 960
+print abcefjihgd
+abcegdfhij = 961
+print abcegdfhij
+abcegdfhji = 962
+print abcegdfhji
+abcegdfihj = 963
+print abcegdfihj
+abcegdfijh = 964
+print abcegdfijh
+abcegdfjhi = 965
+print abcegdfjhi
+abcegdfjih = 966
+print abcegdfjih
+abcegdhfij = 967
+print abcegdhfij
+abcegdhfji = 968
+print abcegdhfji
+abcegdhifj = 969
+print abcegdhifj
+abcegdhijf = 970
+print abcegdhijf
+abcegdhjfi = 971
+print abcegdhjfi
+abcegdhjif = 972
+print abcegdhjif
+abcegdifhj = 973
+print abcegdifhj
+abcegdifjh = 974
+print abcegdifjh
+abcegdihfj = 975
+print abcegdihfj
+abcegdihjf = 976
+print abcegdihjf
+abcegdijfh = 977
+print abcegdijfh
+abcegdijhf = 978
+print abcegdijhf
+abcegdjfhi = 979
+print abcegdjfhi
+abcegdjfih = 980
+print abcegdjfih
+abcegdjhfi = 981
+print abcegdjhfi
+abcegdjhif = 982
+print abcegdjhif
+abcegdjifh = 983
+print abcegdjifh
+abcegdjihf = 984
+print abcegdjihf
+abcegfdhij = 985
+print abcegfdhij
+abcegfdhji = 986
+print abcegfdhji
+abcegfdihj = 987
+print abcegfdihj
+abcegfdijh = 988
+print abcegfdijh
+abcegfdjhi = 989
+print abcegfdjhi
+abcegfdjih = 990
+print abcegfdjih
+abcegfhdij = 991
+print abcegfhdij
+abcegfhdji = 992
+print abcegfhdji
+abcegfhidj = 993
+print abcegfhidj
+abcegfhijd = 994
+print abcegfhijd
+abcegfhjdi = 995
+print abcegfhjdi
+abcegfhjid = 996
+print abcegfhjid
+abcegfidhj = 997
+print abcegfidhj
+abcegfidjh = 998
+print abcegfidjh
+abcegfihdj = 999
+print abcegfihdj
+abcegfihjd = 1000
+print abcegfihjd

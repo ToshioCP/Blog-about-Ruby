@@ -1,0 +1,10 @@
+<h1 class="my-2">単語削除</h1>
+<%= form_with url: words_exec_delete_path, method: :delete do |form| %>
+  <div>
+    <%= form.label :en, "英単語", class: "form-label" %><br>
+    <%= form.text_field :en, value: @delete_word, class: "form-control" %>
+  </div>
+  <div class="my-2">
+    <%= form.submit "削除",  class: "btn btn-primary", data: {turbo_confirm: "Are you sure?"} %>
+  </div>
+<% end %>

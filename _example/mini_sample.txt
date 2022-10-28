@@ -1,0 +1,7 @@
+abc = 100
+efg = 50
+print abc
+print efg
+
+abc = 200
+print abc

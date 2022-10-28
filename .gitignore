@@ -1,4 +1,16 @@
 _site
 .sass-cache
 .jekyll-metadata
-Gemfile.lock
+
+# rails
+_example/word_book_rails/config/master.key
+_example/word_book_rails/db/*.sqlite3
+_example/word_book_rails/log
+!_example/word_book_rails/log/.keep
+_example/word_book_rails/tmp
+!_example/word_book_rails/tmp/.keep
+_example/word_book_rails/node_modules
+_example/word_book_rails/storage
+!_example/word_book_rails/storage/.keep
+_example/word_book_rails/vendor
+!_example/word_book_rails/vendor/.keep

@@ -1,0 +1,8 @@
+require "rake/testtask"
+
+FileList['test*.rb'].each do |file|
+  Rake::TestTask.new do |t|
+    t.test_files = [file]
+    t.verbose = false
+  end
+end

@@ -1,5 +1,5 @@
 ---
-title: "Post: Notice"
+title: "Post: Notice--MM同梱、参考になるので保存"
 categories:
   - Blog
 tags:
