@@ -2,6 +2,7 @@
 layout: posts
 title: 整数
 description: Rubyの整数
+category: 基本事項
 date: 2022-9-5 10:00:00 +0900
 ---
 ここではRubyの最も基本的なオブジェクトである整数について説明します。

@@ -2,6 +2,7 @@
 layout: posts
 title: 実数とファイル
 description: 実数（浮動小数点数）オブジェクトとFile, Dirオブジェクト、FileUtilsモジュールの解説
+category: 基本事項
 date: 2022-9-18 22:00:00 +0900
 ---
 ## 実数

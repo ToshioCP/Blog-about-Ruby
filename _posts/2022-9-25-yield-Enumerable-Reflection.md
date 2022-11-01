@@ -2,6 +2,7 @@
 layout: posts
 title: yield、Enumerable、リフレクション
 description: yield、Enumerableモジュール、リフレクション
+category: クラスとモジュール
 date: 2022-9-25 12:10:26 +0900
 ---
 ブロック付きメソッドの作り方を説明します。

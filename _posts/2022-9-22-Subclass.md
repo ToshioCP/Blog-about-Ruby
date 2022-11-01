@@ -2,6 +2,7 @@
 layout: posts
 title: サブクラス
 description: サブクラスと統計処理への応用
+category: クラスとモジュール
 date: 2022-9-22 15:30:00 +0900
 ---
 ## クラスの親子関係

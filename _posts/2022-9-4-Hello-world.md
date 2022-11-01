@@ -2,6 +2,7 @@
 layout: posts
 title: Hello world
 description: Rubyはじめの一歩、ハローワールド
+category: 基本事項
 date: 2022-9-4 20:00:00 +0900
 ---
 「徒然なるままに」をネットで調べてみると、「することもなく、手持無沙汰なのにまかせてという意味」とありました。

@@ -2,6 +2,7 @@
 layout: posts
 title: 便利なメソッド
 description: 実用的なメソッドを紹介
+category: 基本事項
 date: 2022-9-19 14:00:00 +0900
 ---
 ここでは私が便利だと思ったメソッドを紹介します。

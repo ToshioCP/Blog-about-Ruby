@@ -2,6 +2,7 @@
 layout: posts
 title: case文
 description: case文の特徴と使い方
+category: Procオブジェクト
 date: 2022-9-29 12:49:20 +0900
 ---
 if〜elsif〜・・・〜else〜endは皆さん良く使うでしょうか？

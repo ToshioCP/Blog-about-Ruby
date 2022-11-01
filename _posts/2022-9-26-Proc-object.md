@@ -2,6 +2,7 @@
 layout: posts
 title: "Proc オブジェクト"
 description: Procオブジェクトの定義と使い方
+category: Procオブジェクト
 date: 2022-9-26 22:48:18 +0900
 ---
 今回はブロックを一般化したオブジェクトProcを説明します。

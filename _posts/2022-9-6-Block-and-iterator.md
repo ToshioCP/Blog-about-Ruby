@@ -2,6 +2,7 @@
 layout: posts
 title: ブロックとイテレータ
 description: ブロックとイテレータの初歩的な説明
+category: 基本事項
 date: 2022-9-6 21:00:00 +0900
 ---
 ブロックはRubyの特長です。
