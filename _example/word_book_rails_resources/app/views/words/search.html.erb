@@ -11,7 +11,7 @@
     <tbody>
     <% @words.each do |word| %>
       <tr>
-        <td><%= link_to word[:en], word_path(word) %></td>
+        <td><%= link_to word[:en], word %></td>
         <td><%= word[:jp] %></td>
       </tr>
     <% end %>
