@@ -19,7 +19,7 @@ class WordsController < ApplicationController
     @word = Word.new(word_params)
     if @word.save
       flash[:success] = "単語を保存しました"
-      redirect_to word_path(@word), status: :see_other
+      redirect_to @word, status: :see_other
     else
       flash.now[:alert] = "単語を保存できませんでした"
       render :new, status: :unprocessable_entity
