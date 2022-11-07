@@ -2,7 +2,10 @@ _site
 .sass-cache
 .jekyll-metadata
 
+Gemfile.lock
+
 # rails
+_example/word_book_rails/Gemfile.lock
 _example/word_book_rails/config/master.key
 _example/word_book_rails/db/*.sqlite3
 _example/word_book_rails/log
@@ -14,3 +17,16 @@ _example/word_book_rails/storage
 !_example/word_book_rails/storage/.keep
 _example/word_book_rails/vendor
 !_example/word_book_rails/vendor/.keep
+
+_example/word_book_rails_resources/Gemfile.lock
+_example/word_book_rails_resources/config/master.key
+_example/word_book_rails_resources/db/*.sqlite3
+_example/word_book_rails_resources/log
+!_example/word_book_rails_resources/log/.keep
+_example/word_book_rails_resources/tmp
+!_example/word_book_rails_resources/tmp/.keep
+_example/word_book_rails_resources/node_modules
+_example/word_book_rails_resources/storage
+!_example/word_book_rails_resources/storage/.keep
+_example/word_book_rails_resources/vendor
+!_example/word_book_rails_resources/vendor/.keep
