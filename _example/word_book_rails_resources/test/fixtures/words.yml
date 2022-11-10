@@ -1,11 +1,15 @@
-# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+# Word model fixtures
 
-one:
-  en: MyString
-  jp: MyString
-  note: MyText
+tall:
+  en: tall
+  jp: 高い
+  note: |
+    He is tall.
+    彼は背が高い。
 
-two:
-  en: MyString
-  jp: MyString
-  note: MyText
+house:
+  en: house
+  jp: 家
+  note: |
+    I stayed in my house.
+    私は家にいました。
