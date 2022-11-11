@@ -13,6 +13,7 @@ class WordsController < ApplicationController
 
   def new
     @word = Word.new
+    @submit = "作成"
   end
 
   def create
@@ -34,6 +35,7 @@ class WordsController < ApplicationController
       flash[:alert] = "データベースにはid=#{params[:id]}のデータは登録されていません"
       redirect_to words_path, status: :see_other
     end
+    @submit = "変更"
   end
 
   def update
