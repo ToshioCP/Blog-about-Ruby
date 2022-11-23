@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <object id="window" class="GtkWindow">
+    <property name="title">Calc</property>
+    <property name="default-width">400</property>
+    <property name="default-height">200</property>
+
+    <child>
+      <object id="vbox" class="GtkBox">
+        <property name="orientation">GTK_ORIENTATION_VERTICAL</property>
+        <child>
+          <object id="hbox" class="GtkBox">
+            <property name="orientation">GTK_ORIENTATION_HORIZONTAL</property>
+            <child>
+              <object id="entry" class="GtkEntry">
+              </object>
+            </child>
+            <child>
+              <object id="button_calc" class="GtkButton">
+                <property name="label">計算</property>
+              </object>
+            </child>
+            <child>
+              <object id="button_clear" class="GtkButton">
+                <property name="label">クリア</property>
+              </object>
+            </child>
+            <child>
+              <object id="button_quit" class="GtkButton">
+                <property name="label">終了</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object id="label" class="GtkLabel">
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
