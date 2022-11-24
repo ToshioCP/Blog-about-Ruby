@@ -192,7 +192,7 @@ Configuration file: /home/ユーザディレクトリ... .../sample/_config.yml
 下から2行目に「ローカルホストの4000番ポート」にサーバアドレスが設定されていることが記されています。
 ブラウザ（Google Chrome、FirefoxやMicrosoft Edgeなど）を立ち上げ、「`http://localhost:4000/`」または同じことですが「`http://127.0.0.1:4000/`」を開くと、次のような画面が現れます。
 
-![sampleのローカルホストの画面](/assets/images/jekyll_local.png)
+![sampleのローカルホストの画面]({{ "/assets/images/jekyll_local.png" | relative_url }})
 
 - 「bundle exec jekyll serve」でローカルホスト（あなたが動かしているコンピュータのこと）がウェブサーバとなった
 - ローカルのアドレス（上記のアドレス）にJekyllが作成したページが存在する
