@@ -167,7 +167,7 @@ GTK 3ではデフォルトが「visible」ではないので、`window.show`を�
 `window.show_all`を使うとウィンドウとその子孫ウィジェットが表示できる。
 なお、`window.show`に加えて`label.show`とすればウィンドウ・ラベルともに表示できるが、`show_all`を使うほうが簡単
 
-![Hello world](/assets/images/helo_gtk.png)
+![Hello world]({{ "/assets/images/hello_gtk.png" | relative_url }})
 
 さて、「Hello world」を表示するだけにもかかわらず、説明がこんなに長くなってしまいました。
 考えてみると、その多くの部分はGTKの説明です。
@@ -269,7 +269,7 @@ end
 application.run
 ```
 
-![calc](/assets/images/calc_gtk.png)
+![calc]({{ "/assets/images/calc_gtk.png" | relative_url }})
 
 最初のあたりはGTK 3/4両方に対応するための処理、それから`get_answer`は以前と同じメソッドです。
 GTKに関するプログラムはapplicationの定義以降です。
