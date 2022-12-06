@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <object id="window" class="GtkApplicationWindow">
+    <property name="title">単語帳</property>
+    <property name="default-width">1200</property>
+    <property name="default-height">800</property>
+    <child>
+      <object class="GtkBox">
+        <property name="orientation">GTK_ORIENTATION_VERTICAL</property>
+        <property name="name">vbox</property>
+        <property name="spacing">5</property>
+        <child>
+          <object class="GtkBox">
+            <property name="orientation">GTK_ORIENTATION_HORIZONTAL</property>
+            <child>
+              <object id="button_append" class="GtkButton">
+                <property name="label">追加</property>
+                <property name="action-name">app.append</property>
+              </object>
+            </child>
+            <child>
+              <object id="search_entry" class="GtkSearchEntry">
+                <property name="activates-default">true</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="hexpand">true</property>
+              </object>
+            </child>
+            <child>
+              <object id="button_quit" class="GtkButton">
+                <property name="label">終了</property>
+                <property name="action-name">app.quit</property>
+                <property name="name">button_quit</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkScrolledWindow">
+            <property name="hexpand">TRUE</property>
+            <property name="vexpand">TRUE</property>
+            <child>
+              <object id="columnview" class="GtkColumnView">
+                <property name="hexpand">TRUE</property>
+                <property name="vexpand">TRUE</property>
+                <property name="model">
+                  <object id="singleselection" class="GtkSingleSelection">
+                    <property name="model">
+                      <object id="sortlist" class="GtkSortListModel">
+                        <property name="model">
+                          <object id="filterlist" class="GtkFilterListModel">
+                            <property name="filter">
+                              <object id="filter" class = "GtkCustomFilter"></object>
+                            </property>
+                            <property name="model">
+                              <object id="liststore" class="GListStore"></object>
+                            </property>
+                          </object>
+                        </property>
+                        <binding name="sorter">
+                          <lookup name="sorter">columnview</lookup>
+                        </binding>
+                      </object>
+                    </property>
+                  </object>
+                </property>
+                <child>
+                  <object class="GtkColumnViewColumn">
+                    <property name="title">英語</property>
+                    <property name="expand">false</property>
+                    <property name="fixed-width">250</property>
+                    <property name="factory">
+                      <object class="GtkBuilderListItemFactory">
+                        <property name="bytes"><![CDATA[
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <template class="GtkListItem">
+    <property name="child">
+      <object class="GtkLabel">
+        <property name="hexpand">TRUE</property>
+        <property name="xalign">0</property>
+        <property name="ellipsize">PANGO_ELLIPSIZE_END</property>
+        <binding name="label">
+          <lookup name="en" type = "WBRecord">
+            <lookup name="item">GtkListItem</lookup>
+          </lookup>
+        </binding>
+      </object>
+    </property>
+  </template>
+</interface>
+                        ]]></property>
+                      </object>
+                    </property>
+                    <property name="sorter">
+                      <object class="GtkStringSorter">
+                        <property name="expression">
+                          <lookup name="en" type="WBRecord">
+                          </lookup>
+                        </property>
+                      </object>
+                    </property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkColumnViewColumn">
+                    <property name="title">日本語</property>
+                    <property name="expand">false</property>
+                    <property name="fixed-width">400</property>
+                    <property name="factory">
+                      <object class="GtkBuilderListItemFactory">
+                        <property name="bytes"><![CDATA[
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <template class="GtkListItem">
+    <property name="child">
+      <object class="GtkLabel">
+        <property name="hexpand">TRUE</property>
+        <property name="xalign">0</property>
+        <property name="ellipsize">PANGO_ELLIPSIZE_END</property>
+        <binding name="label">
+          <lookup name="jp" type = "WBRecord">
+            <lookup name="item">GtkListItem</lookup>
+          </lookup>
+        </binding>
+      </object>
+    </property>
+  </template>
+</interface>
+                        ]]></property>
+                      </object>
+                    </property>
+                    <property name="sorter">
+                      <object class="GtkStringSorter">
+                        <property name="expression">
+                          <lookup name="jp" type="WBRecord">
+                          </lookup>
+                        </property>
+                      </object>
+                    </property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkColumnViewColumn">
+                    <property name="title">備考</property>
+                    <property name="expand">TRUE</property>
+                    <property name="factory">
+                      <object id="builderfactory" class="GtkBuilderListItemFactory">
+                        <property name="bytes"><![CDATA[
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <template class="GtkListItem">
+    <property name="child">
+      <object class="GtkLabel">
+        <property name="hexpand">TRUE</property>
+        <property name="xalign">0</property>
+        <property name="ellipsize">PANGO_ELLIPSIZE_END</property>
+        <binding name="label">
+          <closure type="gchararray" function="nl2sp">
+            <lookup name="note" type = "WBRecord">
+              <lookup name="item">GtkListItem</lookup>
+            </lookup>
+          </closure>
+        </binding>
+      </object>
+    </property>
+  </template>
+</interface>
+                        ]]></property>
+                      </object>
+                    </property>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

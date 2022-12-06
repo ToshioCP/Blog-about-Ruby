@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <template class="TopWindow" parent="GtkApplicationWindow">
+    <child>
+      <object class="GtkBox">
+        <property name="orientation">GTK_ORIENTATION_VERTICAL</property>
+        <property name="spacing">5</property>
+        <child>
+          <object id="search_entry" class="GtkSearchEntry">
+          </object>
+        </child>
+        <child>
+          <object id="print_button" class="GtkButton">
+            <property name="label">端末画面表示</property>
+          </object>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>
