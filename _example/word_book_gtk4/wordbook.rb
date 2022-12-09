@@ -2,37 +2,29 @@ require "gtk4"
 require_relative "db.rb"
 
 # This file contains three objects.
-# Class EditWindow
+# Class EditWindow < GtkWindow
 # GtkApplicationWindow
 # GtkApplication
-# The global variable $editwindow is shared by main and TopWindow class object.
 
-# EditWindow object is a wrapper for GtkWindow.
-class EditWindow
+# EditWindow is a composite widget for GtkWindow.
+class EditWindow < Gtk::Window
+  type_register
+  class << self
+    def init # this method is called only once when the class is created.
+      set_template(:data => GLib::Bytes.new(File.read("edit_window.ui")))
+      bind_template_child("entry_en")
+      bind_template_child("entry_jp")
+      bind_template_child("textview")
+    end
+  end
   attr_accessor :index
-  def initialize
-    builder = Gtk::Builder.new(string: Edit_window_ui)
-    @window = builder["window"]
-    @entry_en = builder["entry_en"]
-    @entry_jp = builder["entry_jp"]
-    @textview = builder["textview"]
-  end
-  def set_application(app)
-    @window.set_application(app)
-  end
   def record=(record)
-    @entry_en.text = record[0]
-    @entry_jp.text = record[1]
-    @textview.buffer.text = record[2]
+    entry_en.text = record[0]
+    entry_jp.text = record[1]
+    textview.buffer.text = record[2]
   end
   def record
-    [@entry_en.text, @entry_jp.text, @textview.buffer.text]
-  end
-  def show
-    @window.show
-  end
-  def close
-    @window.destroy
+    [entry_en.text, entry_jp.text, textview.buffer.text]
   end
 end
 
@@ -53,75 +45,66 @@ class TopWindow
     custom_filter = builder["filter"]
     @liststore = builder["liststore"]
     columnview.signal_connect("activate") do |_columnview, index|
-      $editwindow = EditWindow.new
-      $editwindow.set_application(@window.application)
-      $editwindow.record = DB.instance.record(index)
-      $editwindow.index = index
-      $editwindow.show
+      edit_window = EditWindow.new
+      edit_window.set_application(@window.application)
+      edit_window.record = DB.instance.record(index)
+      edit_window.index = index
+      edit_window.show
     end
 
     search_entry.signal_connect("activate") do |entry|
       begin
         regexp = Regexp.compile(entry.text)
       rescue RegexpError
-        regexp = //
+        dialog = Gtk::MessageDialog.new(parent: window, flags: :modal, type: :warning, buttons: :ok, message: "正規表現の構文エラー")
+        dialog.signal_connect "response" do
+          dialog.destroy
+        end
+        dialog.show
+        regexp = // # match any string
       end
       custom_filter.set_filter_func { |wbrecord| regexp =~ wbrecord.to_a[0] }
       custom_filter.changed(:different)
     end
   end
-
   def window
     @window
   end
-  def show
-    @window.show
-  end
-  def set_application(app)
-    @window.set_application(app)
-  end
   def liststore
     @liststore
-  end
-  def close
-    @window.destroy
   end
 end
 
 # GtkApplication
 
 application = Gtk::Application.new("com.github.toshiocp.wordbook", :default_flags)
-
 # action handlers
 do_append = lambda do
-  $editwindow = EditWindow.new
-  $editwindow.set_application(application)
-  $editwindow.index = nil
-  $editwindow.show
+  edit_window = EditWindow.new
+  edit_window.set_application(application)
+  edit_window.index = nil
+  edit_window.show
 end
 do_cancel = lambda do
-  if $editwindow
-    $editwindow.close
-    $editwindow = nil
-  end
+  edit_window = application.active_window
+  return unless edit_window.instance_of? EditWindow
+  edit_window.destroy
 end
 do_delete = lambda do
-  if $editwindow
-    @db.delete($editwindow.index)
-    $editwindow.close
-    $editwindow = nil
-  end
+  edit_window = application.active_window
+  return unless edit_window.instance_of? EditWindow
+  @db.delete(edit_window.index)
+  edit_window.destroy
 end
 do_save = lambda do
-  if $editwindow
-    if $editwindow.index
-      @db.change($editwindow.index, $editwindow.record)
-    else
-      @db.append($editwindow.record)
-    end
-    $editwindow.close
-    $editwindow = nil
+  edit_window = application.active_window
+  return unless edit_window.instance_of? EditWindow
+  if edit_window.index
+    @db.change(edit_window.index, edit_window.record)
+  else
+    @db.append(edit_window.record)
   end
+  edit_window.destroy
 end
 do_quit = lambda do
   application.quit
@@ -174,15 +157,13 @@ application.signal_connect "activate" do |app|
   provider.load_from_data(css_text)
   Gtk::StyleContext.add_provider_for_display(@topwindow.window.display, provider, :user)
 
-  @topwindow.show
+  @topwindow.window.show
 end
 
 # main routine
 
 # To register WBRecord type
 WBRecord.new
-# UI string
-Edit_window_ui = File.read("edit_window.ui")
 
 application.run
 

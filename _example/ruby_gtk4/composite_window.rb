@@ -27,7 +27,8 @@ class TopWindow < Gtk::ApplicationWindow
         </template>
       </interface>
       EOS
-      set_template(:data => GLib::Bytes.new(ui_string))
+      # set_template(:data => GLib::Bytes.new(ui_string))
+      set_template(:data => ui_string)
       bind_template_child("search_entry")
       bind_template_child("print_button")
     end
@@ -36,7 +37,7 @@ class TopWindow < Gtk::ApplicationWindow
   def initialize(app)
     super(application: app)
     print_button.signal_connect("clicked") { print "#{search_entry.text}\n" }
-    signal_connect("close-request") { app.quit; true }
+    # signal_connect("close-request") { app.quit; true }
   end
 end
 
