@@ -13,7 +13,7 @@ application.signal_connect "activate" do |app|
   label = Gtk::Label.new("Hello World")
   if @gtk_version == 4
     window.child = label
-    window.show
+    window.present
   else
     window.add(label)
     window.show_all

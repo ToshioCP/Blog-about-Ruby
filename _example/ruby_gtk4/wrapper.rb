@@ -44,7 +44,7 @@ end
 
 application = Gtk::Application.new("com.github.toshiocp.subclass", :default_flags)
 application.signal_connect "activate" do |app|
-  MainWindow.new(app).window.show
+  MainWindow.new(app).window.present
 end
 
 application.run

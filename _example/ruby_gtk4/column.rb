@@ -106,7 +106,7 @@ application.signal_connect "activate" do |app|
   # サンプルデータ
   liststore.append(EngJap.new("hello", "こんにちは"))
   liststore.append(EngJap.new("good-bye", "さようなら"))
-  window.show
+  window.present
 end
 
 application.run

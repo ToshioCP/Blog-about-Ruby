@@ -23,6 +23,6 @@ application.signal_connect "activate" do |app|
   builder = Gtk::Builder.new(string: ui_string)
   window = builder["window"]
   window.set_application(app)
-  window.show
+  window.present
 end
 application.run

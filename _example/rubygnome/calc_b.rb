@@ -47,7 +47,7 @@ application.signal_connect "activate" do |app|
   end
 
   if @gtk_version == 4
-    window.show
+    window.present
   else
     window.show_all
   end

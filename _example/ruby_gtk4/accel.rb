@@ -32,6 +32,6 @@ application.signal_connect "activate" do |app|
   end
   app.add_action(action)
 
-  window.show
+  window.present
 end
 application.run

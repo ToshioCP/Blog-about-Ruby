@@ -49,7 +49,7 @@ class TopWindow
       edit_window.set_application(@window.application)
       edit_window.record = DB.instance.record(index)
       edit_window.index = index
-      edit_window.show
+      edit_window.present
     end
 
     search_entry.signal_connect("activate") do |entry|
@@ -60,7 +60,7 @@ class TopWindow
         dialog.signal_connect "response" do
           dialog.destroy
         end
-        dialog.show
+        dialog.present
         regexp = // # match any string
       end
       custom_filter.set_filter_func { |wbrecord| regexp =~ wbrecord.to_a[0] }
@@ -83,7 +83,7 @@ do_append = lambda do
   edit_window = EditWindow.new
   edit_window.set_application(application)
   edit_window.index = nil
-  edit_window.show
+  edit_window.present
 end
 do_cancel = lambda do
   edit_window = application.active_window
@@ -155,9 +155,9 @@ application.signal_connect "activate" do |app|
   EOS
   provider = Gtk::CssProvider.new #GtkCssProvider
   provider.load_from_data(css_text)
-  Gtk::StyleContext.add_provider_for_display(@topwindow.window.display, provider, :user)
+  Gtk::StyleContext.add_provider_for_display(Gdk::Display.default, provider, :user)
 
-  @topwindow.window.show
+  @topwindow.window.present
 end
 
 # main routine
