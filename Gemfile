@@ -5,7 +5,6 @@ gem "jekyll-include-cache", group: :jekyll_plugins
 
 gem "tzinfo-data"
 gem "webrick"
-gem "netrc"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
