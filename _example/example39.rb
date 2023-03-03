@@ -49,9 +49,20 @@ def example4 filename
   print "#{nline}\n"
 end
 
+def example5 filename
+  nline = 0
+  f = File.open(filename)
+  while f.gets
+    nline += 1
+  end
+  f.close
+  print "#{nline}\n"
+end
+
 # main
 
 example1
 example2
 example3
 example4("_example/example39.rb")
+example5("_example/example39.rb")
