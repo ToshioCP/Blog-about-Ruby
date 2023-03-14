@@ -1,6 +1,6 @@
 require 'benchmark'
 
-@a = File.read("_example/pg28885.txt").split(/[^A-Za-z]+/)
+@a = File.read("_example/pg28885.txt").scan(/[[:word:]]+/)
 
 def install_a (w)
   @word_table_a.each do |a|

@@ -100,7 +100,6 @@ defaults:
       comments: false
       share: true
       related: true
-      mathjax: true
   # _pages
   - scope:
       path: "_pages"
