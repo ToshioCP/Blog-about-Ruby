@@ -26,7 +26,7 @@ c = b << a
 p c.call(5)
 
 a = lambda{|x| x.size}
-b = lambda{|x| x.split(/\W/)}
+b = lambda{|x| x.scan(/\w+/)}
 e = "I declare before you all that my whole life, whether it be long or short, "\
 "shall be devoted to your service and to the service of our great imperial family to which we all belong."
 p (a << b).call(e)
