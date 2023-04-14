@@ -2,7 +2,7 @@ require 'minitest/autorun'
 require 'fileutils'
 
 # The test will be done under 'temp_test_main_wordbook' directory
-class TestMainWorkbook < Minitest::Test
+class TestMainWordbook < Minitest::Test
   include FileUtils
   def setup
     @tempd = 'temp_test_main_wordbook' 
