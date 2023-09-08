@@ -17,7 +17,6 @@ title: 徒然なるままにRuby
 subtitle: 初心者から上級者までのゆるーいRubyチュートリアル
 email:
 description: 思いつくままにRubyのトピックを・・・初心者向けの内容
-twitter_username: ToshioCP
 github_username: ToshioCP
 minimal_mistakes_skin: sunrise
 search: true
@@ -69,9 +68,6 @@ author:
     - label: "はてなブログ"
       icon: "fas fa-pen-nib"
       url: "https://toshiocp.com/"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/ToshioCP"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/ToshioCP"
@@ -81,9 +77,6 @@ footer:
     - label: "はてなブログ"
       icon: "fas fa-pen-nib"
       url: "https://toshiocp.com/"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/ToshioCP"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/ToshioCP"
