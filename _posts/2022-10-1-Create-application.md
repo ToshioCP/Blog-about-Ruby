@@ -5,13 +5,15 @@ description: アプリ制作、インストール、テスト
 category: 基本事項
 date: 2022-10-1 21:06:59 +0900
 ---
-だいぶRubyの説明は進みましたから、このあたりでアプリを作る上でのポイントを述べたいと思います。
-そのために、簡単な電卓プログラムを作り、GitHubにアップロードしたので、参考にしてください。
 
-[calc](https://github.com/ToshioCP/calc)
+2023/10/29 追記：この記事は新しく書き直しました。
+古い記事で使っていたGitHubの`Calc`が大幅にアップデートされたためです。
+そこで、この記事に合うようなプログラム`simple_calc`を新たに作りました。
+このプログラムは[本レポジトリ](https://github.com/ToshioCP/Blog-about-Ruby)の`_example/simple_calc`にあります。
 
 - [ファイル名で起動する方法](#ファイル名で起動する方法)
 - [コマンドへの引数の処理](#コマンドへの引数の処理)
+- [プログラム](#プログラム)
 - [インストーラ](#インストーラ)
 - [テスト](#テスト)
 - [Readme.md](#readmemd)
@@ -28,6 +30,7 @@ $ ruby ファイル名
 で起動できるのですが、「ruby」と入力するのは煩わしいものです。
 アプリ作成中は仕方がないとしても、完成したアプリはファイル名だけで起動したいですね。
 それを実現するには、次の3行をファイル名の先頭に付けます。
+この方法は[Rubyのドキュメント](https://docs.ruby-lang.org/ja/3.2/doc/index.html)で紹介されています。
 
 ```
 #!/bin/sh
@@ -43,17 +46,17 @@ exec ruby -x "$0" "$@"
 
 2行目はシェルのコマンドで、`exec`はそのシェルのプロセスで（新規プロセスを生成せずに）コマンドを実行する、というものです。
 `$0`は起動されたファイル名（スクリプトファイルのファイル名）、`$@`は引数すべてを表します。
-これから、もしこのスクリプトファイルのファイル名が`copy`でコマンドラインから次のように呼ばれたとすると、
+これから、もしこのスクリプトファイルのファイル名が`abc`でコマンドラインから次のように呼ばれたとすると、
 
 ```
-copy file1 file2
+abc file1 file2
 ```
 
-まず、`/bin/sh/が起動され、2行目が実行されます。
+まず、`/bin/sh/`が起動され、2行目が実行されます。
 2行目は
 
 ```
-ruby -x copy file1 file2
+ruby -x abc file1 file2
 ```
 
 とコマンドラインから入力するのとほぼ同じことになります。
@@ -73,6 +76,15 @@ rubyは$HOME/.rbenv以下に保存されるので、/usr/bin/rubyでは呼び出
 （$HOMEはユーザのホームディレクトリで、シェルからは`~`でも参照できます）。
 このrubyはシェルから呼ぶことにより起動できるので、いったんシェルを起動してからrubyを起動する、という面倒なやり方が必要なのです。
 
+以上の説明でたいていは良いのですが、Gem（Rubyのライブラリ）の実行プログラムでは上手く動かない場合があります。
+その場合は次のようにします。
+
+```
+#!/usr/bin/env ruby
+```
+
+この方法が最も良いかもしれません。
+
 ## コマンドへの引数の処理
 
 Unix系OSではコマンドラインの構成が
@@ -89,7 +101,7 @@ Rubyでは、引数は`ARGV`という配列に代入されます。
 $ ruby_echo Hello world
 ```
 
-とコマンド`ruby_echo`が呼ばれたとき、
+とコマンド`ruby_echo`（これはRubyスクリプトだとします）が呼ばれたとき、
 
 - `ARGV[0]`には文字列"Hello"が代入されている
 - `ARGV[1]`には文字列"world"が代入されている
@@ -106,15 +118,13 @@ $ruby_echo 'Hello world'
 この場合は`ARGV[0]`に文字列"Hello world"が代入されます。
 引数は1個ということになります。
 
-引数が何個あるかは配列の要素の数を返すメソッドsizeを使います。
+引数が何個あるかは配列の要素の数を返すメソッド`size`を使います。
 `ARGV.size`が引数の数です。
 
-ruby\_echoのプログラムは簡単です。
+`ruby_echo`のプログラムは簡単です。
 
 ```ruby
-#!/bin/sh
-exec ruby -x "$0" "$@"
-#!ruby
+#!/usr/bin/env ruby
 
 print ARGV.join(' '), "\n"
 ```
@@ -122,27 +132,80 @@ print ARGV.join(' '), "\n"
 配列ARGVの各要素をjoinメソッドで繋げて文字列にします。
 そのとき要素の区切りには、引数' '（半角空白）が用いられます。
 
+## プログラム
+
+コマンドの例として、電卓プログラム`simple_calc.rb`を考えてみましょう。
+このプログラムは引数に与えられた式を計算して答を表示します。
+例えば`1+2*3`を引数に与えると7を表示します。
+
+```
+$ ruby simple_calc.rb 1+2*3
+7.0
+$
+```
+
+このとき、注意すべき点が3つあります。
+
+- 掛け算の記号（xの形の記号）がないので、アスタリスク`*`を使う
+- 式がスペースを含む場合は式全体をシングルクォートで囲む。なぜなら、空白はshellが引数の区切りと判断してしまうから
+- 数字をIntegerをFloatに変換してから計算し、答えもFloatで表示される。そのため、`7`ではなく`7.0`となる
+
+このプログラムでは`s_calc`というRubygemsのGemを使います。
+事前にGemをインストールする必要があります。
+それには`gem`コマンドを使います。
+
+```
+$ gem install s_calc
+```
+
+プログラム中でこのGemをrequireするときは`calc`です。
+`s_calc`ではないことに注意して下さい。
+
+このGemの使い方はかんたんです。
+
+- Calcクラスのインスタンスを生成する
+- そのインスタンスのメソッド`run`を引数付きで呼び出す。引数は評価したい数式の文字列。メソッドの返り値がその計算結果になる
+
+プログラムは次のようになります。
+
+```ruby
+#!/usr/bin/env ruby
+
+require 'calc'
+
+if ARGV.size != 1
+  print "Usage: simple_calc expression\n"
+  print "Example: simple_calc 1+2*3\n"
+else
+  c = Calc.new
+  print "#{c.run(ARGV[0])}\n"
+end
+```
+
+- 1行目はこのスクリプトがその名前で直接shellから呼ばれたときに起動するアプリがRubyであることを示す。いわゆるシバン（Shebang）
+- 3行目で`Calc`名のGemを取り込む
+- if文以下は、引数が1つでなければ使い方を表示、1つならば引数を計算して答えを表示
+
 ## インストーラ
 
-作成例として、電卓プログラムcalc.rbを考えてみましょう。
-このプログラムをコマンド名calcでインストールしたいとします。
-その場合は`$HOME/bin`以下にファイルを置き、実行属性をつければよいのです。
-FileUtilsモジュールを使うのが便利です。
+このプログラムをコマンド名`simple_calc`でインストールしたいとします。
+その場合はディレクトリ`$HOME/.local/bin`以下にファイルを置き、実行属性をつければよいのです。
+もし`$HOME/.local/bin`がない場合は、あらかじめ作成しておきます。
+`FileUtils`モジュールを使うのが便利です。
 
 ```ruby
 require 'fileutils'
 include FileUtils
 
-def install
-  cp "calc.rb", "#{Dir.home}/bin/calc"
-  chmod 0755, "#{Dir.home}/bin/calc"
-end
+cp __dir__ + "/simple_calc.rb", "#{Dir.home}/.local/bin/simple_calc"
+chmod 0755, "#{Dir.home}/.local/bin/simple_calc"
 ```
 
-- Dir.homeはユーザのホームディレクトリ（$HOMEと同じ）を返すメソッド
-- cpはFileUtilsモジュールのメソッドで、ファイルをコピーする。
-- chmodはFileUtilsモジュールのメソッドでファイルの属性を指定する。
-0755は8進整数を表す。このファイル属性は
+- `__dir__`はそのファイル自身の置かれているディレクトリの絶対パスを返す
+- `Dir.home`はユーザのホームディレクトリ（`$HOME`と同じ）を返すメソッド
+- `cp`は`FileUtils`モジュールのメソッドで、ファイルをコピーする。
+- `chmod`は`FileUtils`モジュールのメソッドでファイルの属性を指定する。
+`0755`は8進整数を表す。このファイル属性は
   - 所有者は読み、書き、実行可
   - グループメンバーは読み、実行可で、書き込不可
   - その他ユーザは読み、実行可で、書き込不可
@@ -152,26 +215,38 @@ end
 以上のようにインストールするとコマンドラインから
 
 ```
-$ calc
+$ simple_calc
 ```
 
 で起動できるようになります。
 
+なお、ユーザ用のコマンドのディレクトリ名は`$HOME/bin`でも大丈夫です。
+
 アプリケーションを作るときには、インストーラも作っておきましょう。
 また、アンインストーラ（インストーラに含め、オプションで切り替えても良い）も入れておくと良いです。
-GitHubのCalcにはインストーラ`install.rb`が添付されているので参考にしてください。
+アンインストールは、単に`$HOME/.local/bin/simple_calc`を削除するだけなので、プログラムは簡単です。
+
+```ruby
+File.delete("#{Dir.home}/.local/bin/simple_calc")
+```
+
+これまでのプログラムは、[レポジトリ](https://github.com/ToshioCP/Blog-about-Ruby)の`_example`フォルダに次の名前で保存されています。
+
+- `simple_calc.rb`
+- `simple_calc_installer.rb`
+- `simple_calc_uninstaller.rb`
 
 上記ではユーザ領域へのインストールでしたが、他のLinuxユーザにも使えるようにするには/usr/local/binにインストールします。
 このときは管理者権限が必要なので、Ubuntuなどではsuコマンドを使います。
 例えば
 
 ```
-$ su ruby install.rb
+$ su ruby simple_calc_installer.rb
 ```
 
 のように起動します。
 
-しかし、システム領域にインストールする必要はほとんどないと思います。
+しかし、Linuxを共用で使っておりかつそのプログラムが実用性の高いものでない限り、システム領域にインストールする必要はありません。
 
 ## テスト
 
@@ -180,93 +255,76 @@ Rubyの標準のテスト・スートはminitestです。
 minitestは別の記事で詳しく述べようと思いますが、ここではポイントを絞って書きたいと思います。
 
 テストプログラムはRubyで書きます。
-calcのテストは次のような感じになります。
+ここでは、テストプログラムは`simple_calc`と同じフォルダにあるものとします。
+
+`simple_calc`のテストは、例えば次のようになります。
 
 ```ruby
 require 'minitest/autorun'
-require_relative 'lib_calc.rb'
 
-class TestCalc < Minitest::Test
-  def setup
-    @calc = Calc.new
-  end
-  def teardown
-  end
-
-  def test_lex
-    assert_equal [[func.to_sym,nil],[:'(',nil],[:id,"x"],[:')',nil]], @calc.lex("#{func}(x)")
-... ... ...
-... ... ...
-  end
-
-  def test_parse
-    assert_output("100\n"){@calc.run("10*10")}
-... ... ...
-... ... ...
+class TestSimpleCalc < Minitest::Test
+  def test_simple_calc
+    assert_equal("100.0\n", `ruby simple_calc.rb 10*10`)
   end
 end
 ```
 
 - `minitesti/autorun`をrequireで取り込む
-- テストしたいファイル`lib_calc.rb`はテストプログラムと同一ディレクトリにある。
-取り込みには`require_relative`を使う
-- テスト用のクラス（ここではTestCalcという名前になっている）を`Minitest::Test`のサブクラスとして定義する
-- クラス内にはsetup、teardown、各テスト用のメソッドがある。
-  - setup＝＞各テストの前に準備作業をするためのメソッド
-  - teardown＝＞各テスト後の後始末をするためのメソッド
+- テスト用のクラス（ここではTestSimpleCalcという名前になっている）を`Minitest::Test`のサブクラスとして定義する
 - テスト用のメソッドには`test_`というプレフィックスをつける
 - assert_equial A, B は「Aが正常に機能したときの結果のオブジェクト」「Bが実行結果のオブジェクト」で、それらが一致すればテストを通過したことになり、一致しないとメッセージが出力される。
 前者をexpected（期待される結果）、後者をactual（実際に行った結果）としてメッセージに書き込まれる
-- assert_output(A){ B }はAが標準出力への期待される出力、ブロックは実行メソッド。
-メソッド（B）を実行した出力とAが一致すればテスト通過、一致しなければメッセージが出力される
+- `` `ruby simple_calc.rb 10*10` ``はKernelモジュールが定義するメソッドで、バックティック内の文字列を外部コマンドとして実行し、その結果を返す
 
-テストがすべて通ると次のように出力されます。
+今回は、カレントディレクトリをテストプログラムのディレクトリに移してから実行します。
+テストを実行すると次のように出力されます。
 
 ```
-$ ruby test.rb
-Run options: --seed 43869
+$ ruby test_simple_calc.rb
+Run options: --seed 3936
 
-Running:
+# Running:
 
-..
+.
 
-Finished in 0.006940s, 288.1909 runs/s, 8501.6308 assertions/s.
-2 runs, 59 assertions, 0 failures, 0 errors, 0 skips
+Finished in 0.106165s, 9.4193 runs/s, 9.4193 assertions/s.
+
+1 runs, 1 assertions, 0 failures, 0 errors, 0 skips
 $ 
 ```
-ドットはテスト項目、つまりTestCalcの各メソッドを表しています。
-エラーがあると次のようなメッセージが出力されます。
+
+ドットはテスト項目、つまりTestSimpleCalcの各テスト・メソッドを表しています。
+上記はテストが成功したときの表示です。
+
+テストが失敗するときは、例えば次のようなメッセージが出力されます。
 
 ```
-Run options: --seed 34278
+$ ruby test_simple_calc.rb
+Run options: --seed 37133
 
-Running:
+# Running:
 
-.F
+F
 
-Failure:
-TestCalc#test_parse [test.rb:24]:
-In stdout.
+Finished in 0.106931s, 9.3518 runs/s, 9.3518 assertions/s.
+
+  1) Failure:
+TestSimpleCalc#test_simple_calc [test_simple_calc.rb:5]:
 --- expected
 +++ actual
 @@ -1,2 +1,2 @@
 -"100.0
-+"100
++"1000.0
  "
 
 
-
-rails test test.rb:23
-
-
-
-Finished in 0.010876s, 183.8891 runs/s, 4505.2836 assertions/s.
-2 runs, 49 assertions, 1 failures, 0 errors, 0 skips
+1 runs, 1 assertions, 1 failures, 0 errors, 0 skips
 ```
 
 Failureはテストで失敗したことを示しています。
+ここでは100.0を期待していたのに実際は1000.0が返されたという失敗です。
+
 この他にErrorが出ることがありますが、それはプログラムを実行した時にエラーがあったことを意味しており、テストの結果ではありません。
-上記ではexpectedがマイナスでactualがプラスで表されているので、「100.0」になることを期待してテストしたが、実際は「100」になったということを表しています。
 
 すべての場合をテストするのは無理なので、典型的な例をテストすることになります。
 プログラムのエラーは境界で起こりやすいです。
@@ -274,18 +332,13 @@ Failureはテストで失敗したことを示しています。
 「（変数）>= 0」を使わなければいけないのに「（変数）> 0」を使うといったバグは0以外ではフェイル（失敗）が起こりません。
 ですから「境界をテストする」ことは非常に重要です。
 
-GitHubのcalcには`test.rb`というテストプログラムがついているので参考にしてください。
-
-なお、minitestを使うことを考えると、トップレベルだけでプログラムを作るのは得策ではありません。
-仮にインスタンス変数をトップレベルで使うと、minitestからは参照できなくなります。
-それは、テストのためのメソッドがTestCalcクラスで定義されているので、テスト時のインスタンスはトップレベルではないためです。
-ですから、上の例のように、アプリの中でクラスを定義し、それをsetupメソッドでインスタンス生成して使うのが良い方法です。
+minitestについては、[別の記事](https://toshiocp.github.io/Blog-about-Ruby/minitest/minitest-1/)がありますので、参考にしてください。
 
 ## Readme.md
 
 簡単なドキュメントは付けておくべきです。
 仮に公開しなくても、将来自分自身が見直す時に役に立ちます。
-2週間別の仕事をすると、元の仕事内容を思い出すのに結構な時間がかかります。
+2週間、別の仕事をすると、元の仕事内容を思い出すのに結構な時間がかかります。
 そのときにドキュメントは役に立つでしょう。
 
 GitHubに公開する場合はReadme.mdのようなファイル名をつけることになっています。
@@ -296,7 +349,7 @@ Markdownの説明は、次の記事を参考にしてください。
 
 [はてなブログのMarkdown徹底解説](https://toshiocp.com/entry/2022/07/09/235226)
 
-ただし、はてな記法などのはてな独自の記法はGitHubでは使えません（GitHubのMarkdownはGFM）。
+ただし、はてな独自の記法（はてな記法など）はGitHubでは使えません（GitHubのMarkdownはGFM）。
 
 ## GitとGitHub
 
