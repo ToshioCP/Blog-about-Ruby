@@ -2,7 +2,7 @@
 layout: posts
 title: アプリ制作、インストール、テスト
 description: アプリ制作、インストール、テスト
-category: 基本事項
+category: basics
 date: 2022-10-1 21:06:59 +0900
 ---
 

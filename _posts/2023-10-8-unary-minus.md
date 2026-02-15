@@ -2,7 +2,7 @@
 layout: posts
 title: 単項マイナスと構文解析
 description: Unary minus and parsing
-category: library
+category: libraries
 date: 2023-10-8 22:00:00 +0900
 ---
 

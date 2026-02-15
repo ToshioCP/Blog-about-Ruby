@@ -2,7 +2,7 @@
 layout: posts
 title: GemとBundler
 description: GemとBundler
-category: library
+category: libraries
 date: 2022-10-13 23:05:12 +0900
 ---
 Rubyのライブラリ管理システムのRubygemsとコマンドgemおよびbundlerについて説明します。

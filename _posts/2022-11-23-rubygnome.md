@@ -2,7 +2,7 @@
 layout: posts
 title: Ruby/GTK3とRuby/GTK4 -- Rubyとグラフィック
 description: Ruby/GTK3とRuby/GTK4によるグラフィック
-category: Ruby/GTK4
+category: ruby/gtk4
 date: 2022-11-23 21:00:00 +0900
 ---
 

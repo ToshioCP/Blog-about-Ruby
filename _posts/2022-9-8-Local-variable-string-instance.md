@@ -2,7 +2,7 @@
 layout: posts
 title: ローカル変数、文字列、インスタンス
 description: インスタンスを理解する。そのためにローカル変数と文字列も説明
-category: 基本事項
+category: basics
 date: 2022-9-8 01:00:00 +0900
 ---
 今回の目標はインスタンスです。

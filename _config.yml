@@ -1,65 +1,6 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
 title: 徒然なるままにRuby
 subtitle: 初心者から上級者までのゆるーいRubyチュートリアル
-email:
 description: 思いつくままにRubyのトピックを・・・初心者向けの内容
-github_username: ToshioCP
-minimal_mistakes_skin: sunrise
-search: true
-
-teaser                   : "/assets/images/tsuredure_ruby.png"
-logo                     : "/assets/images/toshio_a_88x88.png"
-og_image                 : "/assets/images/tsuredure_ruby.png"
-
-# Build settings
-markdown: kramdown
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-# Outputting
-permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
-locale: ja
-timezone: Asia/Tokyo
-
-include:
-  - _pages
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-exclude:
-  - README.md
-  - Gemfile
-  - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
-
-# Plugins (previously gems:)
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
-  - jekyll-include-cache
-
 author:
   name   : "Toshio Sekiya"
   avatar : "/assets/images/toshio_a_88x88.png"
@@ -71,6 +12,49 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/ToshioCP"
+
+domain: "toshiocp.github.io"
+url: "https://toshiocp.github.io"
+baseurl: "/Blog-about-Ruby"
+github_username: toshiocp
+
+locale: ja
+timezone: Asia/Tokyo
+lang: ja
+
+search: true
+
+teaser                   : "/assets/images/tsuredure_ruby.png"
+logo                     : "/assets/images/toshio_a_88x88.png"
+og_image                 : "/assets/images/tsuredure_ruby.png"
+
+# Build settings
+markdown: kramdown
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+minimal_mistakes_skin: sunrise
+# Outputting
+permalink: /:categories/:title/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+
+include:
+  - _pages
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - bin/
+  - .jekyll-cache
+
+# Plugins (previously gems:)
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
 
 footer:
   links:

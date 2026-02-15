@@ -2,7 +2,7 @@
 layout: posts
 title: public、private、protected
 description: メソッドの呼び出し制限
-category: クラスとモジュール
+category: classes-modules
 date: 2022-10-5 12:24:06 +0900
 ---
 今回はメソッドの呼び出し制限ついて説明します。

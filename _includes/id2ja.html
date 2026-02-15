@@ -1,0 +1,10 @@
+{% assign category_ids = site.data.categories | map: "id" %}
+{% if category_ids contains include.id %}
+  {% for d in site.data.categories %}
+    {% if d.id == include.id %}
+      {{ d.ja }}
+    {% endif %}
+  {% endfor %}
+{% else %}
+  {{ include.id }}
+{% endif %}

@@ -1,0 +1,36 @@
+- id: basics
+  en: Basics
+  ja: 基本事項
+- id: classes-modules
+  en: "Classes and Modules"
+  ja: クラスとモジュール
+- id: rails7
+  en: "Rails 7"
+  ja: "Rails 7"
+- id: libraries
+  en: Libraries
+  ja: ライブラリ
+- id: proc
+  en: "Proc Objects"
+  ja: Procオブジェクト
+- id: minitest
+  en: Minitest
+  ja: Minitest
+- id: ruby-gtk4
+  en: "Ruby/GTK4"
+  ja: "Ruby/GTK4"
+- id: concurrency
+  en: Concurrency
+  ja: 並行処理
+- id: shoes
+  en: Shoes
+  ja: Shoes
+- id: glimmer
+  en: Glimmer
+  ja: Glimmer
+- id: documentation
+  en: Documentation
+  ja: ドキュメント
+- id: rubygems
+  en: Rubygems
+  ja: Rubygems

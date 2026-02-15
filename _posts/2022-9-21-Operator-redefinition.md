@@ -2,7 +2,7 @@
 layout: posts
 title: 演算子の再定義
 description: 演算子の再定義
-category: クラスとモジュール
+category: classes-modules
 date: 2022-9-21 10:30:00 +0900
 ---
 Rubyの演算子とその再定義について書きます。

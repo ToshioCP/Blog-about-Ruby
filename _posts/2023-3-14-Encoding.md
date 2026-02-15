@@ -2,7 +2,7 @@
 layout: posts
 title: Encoding
 description: Encoding
-category: 基本事項
+category: basics
 date: 2023-3-14 13:00:00 +0900
 ---
 
